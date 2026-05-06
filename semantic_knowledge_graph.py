@@ -183,52 +183,87 @@ def build_interactive_graph(directory, threshold=THRESHOLD):
     # Xóa tất cả click handler cũ
     html_content = re.sub(r'network\.on\("click".*?\}\);', '', html_content, flags=re.DOTALL)
 
-    # Ghi file main.js với dữ liệu markdown và handler ngoài
-    file_contents_json = json.dumps(file_contents, ensure_ascii=False)
-    main_js = f'''
-var fileContents = {file_contents_json};
-
-function bindMarkdownClickHandler() {{
-    if (typeof network === 'undefined') {{
+    # Ghi file main.js với handler ngoài (không chứa nội dung markdown)
+    main_js = '''
+function bindMarkdownClickHandler() {
+    if (typeof network === 'undefined') {
+        console.error('Network object not found');
         return;
-    }}
+    }
 
-    network.on("click", function (params) {{
-        if (params.nodes.length > 0) {{
+    network.on("click", function (params) {
+        console.log('Node clicked:', params);
+        if (params.nodes.length > 0) {
             var nodeId = params.nodes[0];
-            var content = fileContents[nodeId];
-            if (content) {{
-                document.getElementById('markdown-body').innerHTML = marked.parse(content);
-                var modal = new bootstrap.Modal(document.getElementById('markdownModal'));
-                modal.show();
-            }}
-        }}
-    }});
-}}
+            console.log('Loading content for node:', nodeId);
+            
+            // Load nội dung từ file JSON riêng
+            fetch('markdown_contents.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('HTTP error ' + response.status);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Loaded data keys:', Object.keys(data));
+                    var content = data[nodeId];
+                    if (content) {
+                        console.log('Found content for node:', nodeId);
+                        document.getElementById('markdown-body').innerHTML = marked.parse(content);
+                        var modal = new bootstrap.Modal(document.getElementById('markdownModal'));
+                        modal.show();
+                    } else {
+                        console.error('Không tìm thấy nội dung cho node:', nodeId, 'Available keys:', Object.keys(data));
+                        alert('Không tìm thấy nội dung cho file này');
+                    }
+                })
+                .catch(error => {
+                    console.error('Lỗi khi load nội dung:', error);
+                    alert('Lỗi khi tải nội dung: ' + error.message);
+                });
+        }
+    });
+}
 
-function disablePhysicsAfterStabilization() {{
-    if (typeof network === 'undefined') {{
+function disablePhysicsAfterStabilization() {
+    if (typeof network === 'undefined') {
         return;
-    }}
+    }
     
-    network.once('stabilizationIterationsDone', function() {{
-        network.setOptions({{ physics: false }});
+    network.once('stabilizationIterationsDone', function() {
+        network.setOptions({ physics: false });
         console.log('Graph stabilized and physics disabled');
-    }});
-}}
+    });
+}
 
-if (document.readyState === 'complete') {{
-    bindMarkdownClickHandler();
-    disablePhysicsAfterStabilization();
-}} else {{
-    window.addEventListener('load', function() {{
+// Đảm bảo marked.js đã load
+function waitForMarked(callback) {
+    if (typeof marked !== 'undefined') {
+        callback();
+    } else {
+        setTimeout(function() { waitForMarked(callback); }, 100);
+    }
+}
+
+waitForMarked(function() {
+    if (document.readyState === 'complete') {
         bindMarkdownClickHandler();
         disablePhysicsAfterStabilization();
-    }});
-}}
+    } else {
+        window.addEventListener('load', function() {
+            bindMarkdownClickHandler();
+            disablePhysicsAfterStabilization();
+        });
+    }
+});
 '''
     with open('main.js', 'w', encoding='utf-8') as f:
         f.write(main_js)
+
+    # Ghi nội dung markdown vào file JSON riêng
+    with open('markdown_contents.json', 'w', encoding='utf-8') as f:
+        json.dump(file_contents, f, ensure_ascii=False, indent=2)
 
     # Thêm tham chiếu đến main.js
     html_content = html_content.replace('</body>', '    <script src="main.js"></script>\n</body>')
