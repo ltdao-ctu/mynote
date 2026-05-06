@@ -19,8 +19,23 @@ function bindMarkdownClickHandler() {
     });
 }
 
+function disablePhysicsAfterStabilization() {
+    if (typeof network === 'undefined') {
+        return;
+    }
+    
+    network.once('stabilizationIterationsDone', function() {
+        network.setOptions({ physics: false });
+        console.log('Graph stabilized and physics disabled');
+    });
+}
+
 if (document.readyState === 'complete') {
     bindMarkdownClickHandler();
+    disablePhysicsAfterStabilization();
 } else {
-    window.addEventListener('load', bindMarkdownClickHandler);
+    window.addEventListener('load', function() {
+        bindMarkdownClickHandler();
+        disablePhysicsAfterStabilization();
+    });
 }

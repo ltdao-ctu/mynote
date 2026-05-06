@@ -1,6 +1,7 @@
 import os
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.preprocessing import normalize
 from pyvis.network import Network
 import numpy as np
 import json
@@ -13,6 +14,34 @@ load_dotenv()
 
 # Lấy cấu hình từ .env
 THRESHOLD = float(os.getenv("THRESHOLD"))
+
+
+def clean_markdown_content(text):
+    """Làm sạch nội dung Markdown để embedding tốt hơn"""
+    # Xóa code blocks
+    text = re.sub(r'```[\s\S]*?```', '', text)
+    text = re.sub(r'`[^`]+`', '', text)
+    
+    # Xóa links nhưng giữ text
+    text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
+    
+    # Xóa image syntax
+    text = re.sub(r'!\[([^\]]*)\]\([^\)]+\)', '', text)
+    
+    # Xóa HTML tags
+    text = re.sub(r'<[^>]+>', '', text)
+    
+    # Xóa markdown syntax (*, #, -, etc)
+    text = re.sub(r'^#+\s+', '', text, flags=re.MULTILINE)
+    text = re.sub(r'^\*+\s+', '', text, flags=re.MULTILINE)
+    text = re.sub(r'^-+\s+', '', text, flags=re.MULTILINE)
+    
+    # Xóa extra whitespace
+    text = re.sub(r'\s+', ' ', text)
+    text = text.strip()
+    
+    return text
+
 
 
 def build_interactive_graph(directory, threshold=THRESHOLD):
@@ -28,32 +57,84 @@ def build_interactive_graph(directory, threshold=THRESHOLD):
     for file in files:
         with open(os.path.join(directory, file), 'r', encoding='utf-8') as f:
             content = f.read().strip()
-            if len(content) > 10: 
-                documents.append(content)
+            if len(content) > 10:
+                # Làm sạch markdown syntax trước embedding
+                cleaned_content = clean_markdown_content(content)
+                documents.append(cleaned_content)
                 valid_files.append(file)
-                file_contents[file] = content
+                file_contents[file] = content  # Giữ nội dung gốc cho hiển thị
 
     if not valid_files: return
 
     embeddings = model.encode(documents)
     sim_matrix = cosine_similarity(embeddings)
-    #print(sim_matrix)
+    
+    # Normalize similarity scores để dễ debug
+    print(f"[*] Similarity scores - Min: {sim_matrix.min():.4f}, Max: {sim_matrix.max():.4f}, Mean: {sim_matrix.mean():.4f}")
+    print(f"[*] Threshold: {threshold}")
 
     # Khởi tạo Network
     net = Network(height="750px", width="100%", bgcolor="#222222", font_color="white")
     net.force_atlas_2based()
+    
+    # Cấu hình vật lý: stabilize rồi dừng lại
+    net.set_options("""
+    var options = {
+      "physics": {
+        "enabled": true,
+        "forceAtlas2Based": {
+          "gravitationalConstant": -50,
+          "centralGravity": 0.01,
+          "springLength": 200,
+          "springConstant": 0.08,
+          "damping": 0.4,
+          "avoidOverlap": 0.1
+        },
+        "solver": "forceAtlas2Based",
+        "timestep": 0.35,
+        "stabilization": {
+          "iterations": 500,
+          "fit": true,
+          "updateInterval": 25
+        }
+      }
+    }
+    """)
 
-    for i, file in enumerate(valid_files):
-        # Chúng ta dùng tên file làm ID để dễ xử lý link
-        net.add_node(file, label=file, title=f"Click để xem nội dung {file}", color="#00ffcc")
+    # Tính degree (số kết nối) của mỗi file
+    node_degrees = {file: 0 for file in valid_files}
+    edges_data = []
 
     for i in range(len(valid_files)):
         for j in range(i + 1, len(valid_files)):
             score = float(sim_matrix[i][j])
             if score > threshold:
-                net.add_edge(valid_files[i], valid_files[j], value=score, weight=score)
-            #else:
-            #    print(score)
+                edges_data.append((valid_files[i], valid_files[j], score))
+                node_degrees[valid_files[i]] += 1
+                node_degrees[valid_files[j]] += 1
+
+    # Tìm max degree để tính màu
+    max_degree = max(node_degrees.values()) if node_degrees.values() else 1
+
+    # Thêm nodes với màu tùy theo degree
+    for i, file in enumerate(valid_files):
+        degree = node_degrees[file]
+        
+        # Tô màu dựa trên degree
+        if degree == 0:
+            color = "#00ffcc"  # Xanh - không có kết nối
+        elif degree <= max_degree / 3:
+            color = "#ffcc00"  # Vàng - kết nối thấp
+        elif degree <= 2 * max_degree / 3:
+            color = "#ff9900"  # Cam - kết nối trung bình
+        else:
+            color = "#ff6b6b"  # Đỏ - kết nối cao
+        
+        net.add_node(file, label=file, title=f"Click để xem nội dung {file} (kết nối: {degree})", color=color)
+
+    # Thêm edges
+    for file1, file2, score in edges_data:
+        net.add_edge(file1, file2, value=score, weight=score)
 
     # Xuất file HTML
     output_path = "index.html"
@@ -112,10 +193,25 @@ function bindMarkdownClickHandler() {{
     }});
 }}
 
+function disablePhysicsAfterStabilization() {{
+    if (typeof network === 'undefined') {{
+        return;
+    }}
+    
+    network.once('stabilizationIterationsDone', function() {{
+        network.setOptions({{ physics: false }});
+        console.log('Graph stabilized and physics disabled');
+    }});
+}}
+
 if (document.readyState === 'complete') {{
     bindMarkdownClickHandler();
+    disablePhysicsAfterStabilization();
 }} else {{
-    window.addEventListener('load', bindMarkdownClickHandler);
+    window.addEventListener('load', function() {{
+        bindMarkdownClickHandler();
+        disablePhysicsAfterStabilization();
+    }});
 }}
 '''
     with open('main.js', 'w', encoding='utf-8') as f:
