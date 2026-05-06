@@ -48,6 +48,10 @@ Thumbs.db
 # Dependencies
 node_modules/
 
+# Config files
+config.txt
+.env
+
 # Logs
 *.log
 npm-debug.log*
