@@ -1,14 +1,14 @@
 @echo off
 setlocal enabledelayedexpansion
 
-:: 1. Kiểm tra file .env có tồn tại không
+:: 1. Kiểm tra file config.txt có tồn tại không
 if not exist config.txt (
     echo [!] Khong tim thay file config.txt
     pause
     exit
 )
 
-:: 2. Đọc file .env và gán biến
+:: 2. Đọc file config.txt và gán biến
 for /f "tokens=1,2 delims==" %%a in (config.txt) do (
     set %%a=%%b
 )

@@ -11,6 +11,10 @@ SOURCE_PATH = os.getenv("SOURCE_DOCX_PATH")
 class DocxHandler(FileSystemEventHandler):
     """Lớp xử lý các sự kiện thay đổi file"""
     
+    def __init__(self):
+        self.last_trigger_time = 0
+        self.debounce_seconds = 5  # Tránh trigger liên tục trong 5 giây
+    
     def on_modified(self, event):
         # Kiểm tra nếu file bị sửa đổi là file .docx
         if not event.is_directory and event.src_path.endswith('.docx'):
@@ -23,10 +27,26 @@ class DocxHandler(FileSystemEventHandler):
             print(f"\n[!] Phát hiện file mới: {event.src_path}")
             self.trigger_process()
 
+    def on_moved(self, event):
+        # Xử lý khi file được move (thường xảy ra với Google Drive sync)
+        if not event.is_directory and event.dest_path.endswith('.docx'):
+            print(f"\n[!] Phát hiện file được move: {event.dest_path}")
+            self.trigger_process()
+
     def trigger_process(self):
+        current_time = time.time()
+        if current_time - self.last_trigger_time < self.debounce_seconds:
+            print(f"--- Bỏ qua trigger (debounce {self.debounce_seconds}s) ---")
+            return
+            
+        self.last_trigger_time = current_time
         print(">>> Đang bắt đầu quy trình cập nhật tự động...")
-        # Gọi lại hàm workflow của bạn
-        run_workflow()
+        try:
+            # Gọi lại hàm workflow của bạn
+            run_workflow()
+            print(">>> Hoàn thành quy trình cập nhật.")
+        except Exception as e:
+            print(f" [!] Lỗi trong quy trình: {e}")
         print(">>> Đang tiếp tục giám sát...")
 
 if __name__ == "__main__":

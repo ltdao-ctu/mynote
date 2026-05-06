@@ -72,7 +72,15 @@ def run_workflow():
         file_name_md = os.path.basename(md_path_source)
         md_path_destination = os.path.join(current_dir, file_name_md)
 
-        if not os.path.exists(md_path_source):
+        # Kiểm tra nếu .md chưa tồn tại HOẶC .docx mới hơn .md
+        should_convert = not os.path.exists(md_path_source)
+        if os.path.exists(md_path_source) and os.path.exists(docx_path):
+            docx_mtime = os.path.getmtime(docx_path)
+            md_mtime = os.path.getmtime(md_path_source)
+            if docx_mtime > md_mtime:
+                should_convert = True
+
+        if should_convert:
             try:
                 pypandoc.convert_file(docx_path, to='gfm', format='docx', outputfile=md_path_source)
                 print(f" [+] Convert: {file_name_md}")

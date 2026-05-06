@@ -37,4 +37,4 @@ Usecase rất rõ:
 chất lượng nhưng tăng tốc 2–9x, biến Qwen3-TTS từ “gần realtime” thành
 “thực sự realtime”.
 
-Thu thập từ internet
+lưu lại từ internet
