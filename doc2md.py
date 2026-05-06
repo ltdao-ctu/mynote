@@ -68,7 +68,12 @@ def run_workflow():
         return
 
     current_dir = os.getcwd()
-    docx_files = glob.glob(os.path.join(SOURCE_PATH, "*.docx"))
+    # Scan đệ quy tất cả file .docx trong thư mục và subfolders
+    docx_files = []
+    for root, dirs, files in os.walk(SOURCE_PATH):
+        for file in files:
+            if file.endswith('.docx'):
+                docx_files.append(os.path.join(root, file))
     
     has_converted = False
     new_md_files = []
@@ -78,7 +83,13 @@ def run_workflow():
     for docx_path in docx_files:
         md_path_source = os.path.splitext(docx_path)[0] + ".md"
         file_name_md = os.path.basename(md_path_source)
-        md_path_destination = os.path.join(current_dir, file_name_md)
+        
+        # Tạo đường dẫn tương đối từ SOURCE_PATH
+        relative_path = os.path.relpath(md_path_source, SOURCE_PATH)
+        md_path_destination = os.path.join(current_dir, relative_path)
+        
+        # Tạo thư mục đích nếu chưa có
+        os.makedirs(os.path.dirname(md_path_destination), exist_ok=True)
 
         # Kiểm tra nếu .md chưa tồn tại HOẶC .docx mới hơn .md
         should_convert = not os.path.exists(md_path_source)
@@ -93,20 +104,23 @@ def run_workflow():
                 pypandoc.convert_file(docx_path, to='gfm', format='docx', outputfile=md_path_source)
                 print(f" [+] Convert: {file_name_md}")
                 has_converted = True
-                new_md_files.append(file_name_md)
+                new_md_files.append(relative_path)  # Lưu đường dẫn tương đối
             except Exception as e:
                 print(f" [!] Lỗi convert {file_name_md}: {e}")
                 continue
         
+        # Copy .md từ SOURCE_PATH về current_dir (giữ cấu trúc thư mục)
         if os.path.exists(md_path_source):
             if os.path.abspath(md_path_source) != os.path.abspath(md_path_destination):
                 shutil.copy2(md_path_source, md_path_destination)
+                print(f" [+] Copy to repo: {relative_path}")
 
     if has_converted:
         print("-" * 40)
         if build_interactive_graph:
             print(">>> Thực thi build_interactive_graph...")
-            build_interactive_graph('.')
+            # Build graph từ SOURCE_PATH thay vì current_dir
+            build_interactive_graph(SOURCE_PATH)
             
             # Đẩy lên GitHub (sử dụng INDEX_FILE từ .env)
             files_to_push = [INDEX_FILE] + new_md_files

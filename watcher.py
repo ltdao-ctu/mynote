@@ -55,7 +55,7 @@ if __name__ == "__main__":
     else:
         event_handler = DocxHandler()
         observer = Observer()
-        observer.schedule(event_handler, SOURCE_PATH, recursive=False)
+        observer.schedule(event_handler, SOURCE_PATH, recursive=True)
         
         print(f"--- Đang giám sát thư mục: {SOURCE_PATH} ---")
         print("Bấm Ctrl+C để dừng.")
