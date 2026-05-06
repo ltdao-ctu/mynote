@@ -105,15 +105,13 @@ def run_workflow():
                 print(f" [+] Convert: {file_name_md}")
                 has_converted = True
                 new_md_files.append(relative_path)  # Lưu đường dẫn tương đối
+                
+                # Copy .md từ SOURCE_PATH về current_dir (giữ cấu trúc thư mục) - chỉ copy file vừa convert
+                shutil.copy2(md_path_source, md_path_destination)
+                print(f" [+] Copy to repo: {relative_path}")
             except Exception as e:
                 print(f" [!] Lỗi convert {file_name_md}: {e}")
                 continue
-        
-        # Copy .md từ SOURCE_PATH về current_dir (giữ cấu trúc thư mục)
-        if os.path.exists(md_path_source):
-            if os.path.abspath(md_path_source) != os.path.abspath(md_path_destination):
-                shutil.copy2(md_path_source, md_path_destination)
-                print(f" [+] Copy to repo: {relative_path}")
 
     if has_converted:
         print("-" * 40)

@@ -14,6 +14,7 @@ load_dotenv()
 
 # Lấy cấu hình từ .env
 THRESHOLD = float(os.getenv("THRESHOLD"))
+KB_PATH = os.getenv("KB_PATH")
 
 
 def clean_markdown_content(text):
@@ -49,13 +50,22 @@ def build_interactive_graph(directory, threshold=THRESHOLD):
     print("[*] Loading Vietnamese model...")
     model = SentenceTransformer('keepitreal/vietnamese-sbert')
     
-    files = [f for f in os.listdir(directory) if f.endswith('.md')]
+    # Quét đệ quy tất cả file .md trong thư mục và subfolders
+    files = []
+    for root, dirs, files_in_dir in os.walk(directory):
+        for file in files_in_dir:
+            if file.endswith('.md'):
+                # Lưu đường dẫn tương đối từ directory gốc
+                relative_path = os.path.relpath(os.path.join(root, file), directory)
+                files.append(relative_path)
+    
     documents = []
     valid_files = []
     file_contents = {}
 
     for file in files:
-        with open(os.path.join(directory, file), 'r', encoding='utf-8') as f:
+        file_path = os.path.join(directory, file)
+        with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read().strip()
             if len(content) > 10:
                 # Làm sạch markdown syntax trước embedding
@@ -227,4 +237,4 @@ if (document.readyState === 'complete') {{
     print(f"You can now click nodes in {output_path} to view markdown content.")
 
 if __name__ == "__main__":
-    build_interactive_graph('.')
+    build_interactive_graph(KB_PATH)
