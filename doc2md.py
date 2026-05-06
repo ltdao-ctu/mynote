@@ -12,6 +12,7 @@ load_dotenv()
 SOURCE_PATH = os.getenv("SOURCE_DOCX_PATH")
 GIT_BRANCH = os.getenv("GIT_BRANCH", "main") # Mặc định là main nếu không có trong .env
 INDEX_FILE = os.getenv("OUTPUT_HTML", "index.html")
+KB_FOLDER = os.getenv("KB_PATH", "KB") # Mặc định là KB nếu không có trong .env
 
 # Import hàm build_interactive_graph
 try:
@@ -86,7 +87,7 @@ def run_workflow():
         
         # Tạo đường dẫn tương đối từ SOURCE_PATH
         relative_path = os.path.relpath(md_path_source, SOURCE_PATH)
-        md_path_destination = os.path.join(current_dir, relative_path)
+        md_path_destination = os.path.join(current_dir, KB_FOLDER, relative_path)
         
         # Tạo thư mục đích nếu chưa có
         os.makedirs(os.path.dirname(md_path_destination), exist_ok=True)

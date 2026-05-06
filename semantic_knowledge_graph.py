@@ -130,6 +130,9 @@ def build_interactive_graph(directory, threshold=THRESHOLD):
     for i, file in enumerate(valid_files):
         degree = node_degrees[file]
         
+        # Tên node chỉ lấy tên file, không có thư mục
+        node_label = os.path.basename(file)
+        
         # Tô màu dựa trên degree
         if degree == 0:
             color = "#00ffcc"  # Xanh - không có kết nối
@@ -140,7 +143,7 @@ def build_interactive_graph(directory, threshold=THRESHOLD):
         else:
             color = "#ff6b6b"  # Đỏ - kết nối cao
         
-        net.add_node(file, label=file, title=f"Click để xem nội dung {file} (kết nối: {degree})", color=color)
+        net.add_node(file, label=node_label, title=f"Click để xem nội dung {node_label} (kết nối: {degree})", color=color)
 
     # Thêm edges
     for file1, file2, score in edges_data:
