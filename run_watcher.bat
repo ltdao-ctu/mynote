@@ -13,25 +13,23 @@ for /f "tokens=1,2 delims==" %%a in (config.txt) do (
     set %%a=%%b
 )
 
+:: 3. Chuyển tới thư mục project
+echo [+] Dang chuyen toi thu muc: %PROJECT_DIR%
+cd /d "%PROJECT_DIR%"
 
-:: 3. Thực thi quy trình
-if exist "%USERPROFILE%\anaconda3\Scripts\activate.bat" (
-    set ACTIVATE_PATH="%USERPROFILE%\anaconda3\Scripts\activate.bat"
-) else if exist "C:\ProgramData\anaconda3\Scripts\activate.bat" (
-    set ACTIVATE_PATH="C:\ProgramData\anaconda3\Scripts\activate.bat"
-) else (
-    echo [!] Khong tim thay file activate.bat cua Anaconda.
-    echo [!] Hay sua lai duong dan thu cong trong file .bat nay.
+:: 4. Kiểm tra virtual environment có tồn tại không
+if not exist ".venv\Scripts\activate.bat" (
+    echo [!] Khong tim thay virtual environment tai .venv
+    echo [!] Vui long chay: python -m venv .venv
     pause
     exit
 )
 
-echo [+] Dang kich hoat moi truong: %CONDA_ENV_NAME%
-call %ACTIVATE_PATH% %CONDA_ENV_NAME%
+:: 5. Kích hoạt virtual environment
+echo [+] Dang kich hoat virtual environment...
+call .venv\Scripts\activate.bat
 
-echo [+] Dang chuyen toi thu muc: %PROJECT_DIR%
-cd /d "%PROJECT_DIR%"
-
+:: 6. Chạy watcher
 echo [+] Dang chay watcher...
 python watcher.py
 
