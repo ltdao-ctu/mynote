@@ -98,7 +98,7 @@ def run_workflow():
         print("-" * 40)
         if build_interactive_graph:
             print(">>> Thực thi build_interactive_graph...")
-            build_interactive_graph('.', threshold=0.4)
+            build_interactive_graph('.')
             
             # Đẩy lên GitHub (sử dụng INDEX_FILE từ .env)
             files_to_push = [INDEX_FILE] + new_md_files
