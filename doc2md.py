@@ -51,6 +51,8 @@ def git_push_updates(files_to_add, commit_message):
     except subprocess.CalledProcessError as e:
         print(f" [!] Lỗi Git: {e}")
         print(" [Gợi ý] Nếu rebase bị lỗi, có thể do xung đột nội dung file. Bạn hãy mở terminal tại thư mục này và gõ: git pull origin main")
+
+
 def run_workflow():
     # Kiểm tra xem PATH có tồn tại không
     if not SOURCE_PATH or not os.path.exists(SOURCE_PATH):

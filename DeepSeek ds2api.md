@@ -38,4 +38,4 @@ hệ thống.
 Đây là mảnh ghép rất mạnh cho dev muốn build AI system nhưng tối ưu chi
 phí và linh hoạt backend.
 
-\#TiniX \#OpenSource \#LLM \#AIAgents
+Thu thập từ internet

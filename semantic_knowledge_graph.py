@@ -17,7 +17,7 @@ THRESHOLD = float(os.getenv("THRESHOLD"))
 
 def build_interactive_graph(directory, threshold=THRESHOLD):
     print(threshold)
-    print("[*] Đang tải mô hình tiếng Việt...")
+    print("[*] Loading Vietnamese model...")
     model = SentenceTransformer('keepitreal/vietnamese-sbert')
     
     files = [f for f in os.listdir(directory) if f.endswith('.md')]
@@ -52,8 +52,8 @@ def build_interactive_graph(directory, threshold=THRESHOLD):
             score = float(sim_matrix[i][j])
             if score > threshold:
                 net.add_edge(valid_files[i], valid_files[j], value=score, weight=score)
-            else:
-                print(score)
+            #else:
+            #    print(score)
 
     # Xuất file HTML
     output_path = "index.html"
@@ -87,40 +87,48 @@ def build_interactive_graph(directory, threshold=THRESHOLD):
     html_content = html_content.replace('</body>', modal_html + '\n</body>')
 
     # Xóa tất cả click handler cũ
-    pattern = r'network\.on\("click", function \(params\) \{[^}]*window\.open\([^}]*\}\);'
-    html_content = re.sub(pattern, '', html_content, flags=re.DOTALL)
+    html_content = re.sub(r'network\.on\("click".*?\}\);', '', html_content, flags=re.DOTALL)
 
-    # Thêm script chứa nội dung files
-    contents_js = f'''
-<script>
-var fileContents = {json.dumps(file_contents, ensure_ascii=False)};
-</script>
-'''
-    # Chèn trước script cuối
-    html_content = html_content.replace('</script>', contents_js + '\n</script>', 1)
+    # Ghi file main.js với dữ liệu markdown và handler ngoài
+    file_contents_json = json.dumps(file_contents, ensure_ascii=False)
+    main_js = f'''
+var fileContents = {file_contents_json};
 
-    # Thêm click handler mới
-    click_js = '''
-network.on("click", function (params) {
-    if (params.nodes.length > 0) {
-        var nodeId = params.nodes[0];
-        var content = fileContents[nodeId];
-        if (content) {
-            document.getElementById('markdown-body').innerHTML = marked.parse(content);
-            var modal = new bootstrap.Modal(document.getElementById('markdownModal'));
-            modal.show();
-        }
-    }
-});
+function bindMarkdownClickHandler() {{
+    if (typeof network === 'undefined') {{
+        return;
+    }}
+
+    network.on("click", function (params) {{
+        if (params.nodes.length > 0) {{
+            var nodeId = params.nodes[0];
+            var content = fileContents[nodeId];
+            if (content) {{
+                document.getElementById('markdown-body').innerHTML = marked.parse(content);
+                var modal = new bootstrap.Modal(document.getElementById('markdownModal'));
+                modal.show();
+            }}
+        }}
+    }});
+}}
+
+if (document.readyState === 'complete') {{
+    bindMarkdownClickHandler();
+}} else {{
+    window.addEventListener('load', bindMarkdownClickHandler);
+}}
 '''
-    # Chèn vào cuối script
-    html_content = html_content.replace('</script>', click_js + '\n</script>', 1)
+    with open('main.js', 'w', encoding='utf-8') as f:
+        f.write(main_js)
+
+    # Thêm tham chiếu đến main.js
+    html_content = html_content.replace('</body>', '    <script src="main.js"></script>\n</body>')
 
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(html_content)
 
-    print(f"--- HOÀN THÀNH ---")
-    print(f"Bây giờ bạn có thể click vào các node trong file {output_path} để xem nội dung markdown")
+    print("--- COMPLETE ---")
+    print(f"You can now click nodes in {output_path} to view markdown content.")
 
 if __name__ == "__main__":
     build_interactive_graph('.')
