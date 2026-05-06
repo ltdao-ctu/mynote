@@ -37,9 +37,17 @@ def git_push_updates(files_to_add, commit_message):
             subprocess.run(["git", "commit", "-m", commit_message], check=True)
             
             # --- ĐOẠN QUAN TRỌNG ĐỂ SỬA LỖI ---
+            print(">>> [Git] Đang stash uncommitted changes...")
+            # Stash bất kỳ uncommitted changes nào để tránh lỗi pull rebase
+            subprocess.run(["git", "stash"], check=False)
+            
             print(">>> [Git] Đang kéo dữ liệu mới nhất từ GitHub (Pull Rebase)...")
             # Pull về trước để tránh lỗi [rejected]
             subprocess.run(["git", "pull", "origin", GIT_BRANCH, "--rebase"], check=True)
+            
+            print(">>> [Git] Đang unstash changes...")
+            # Unstash lại các changes vừa stash
+            subprocess.run(["git", "stash", "pop"], check=False)
             
             # 3. Sau khi đã đồng bộ thì mới Push
             print(">>> [Git] Đang đẩy dữ liệu lên GitHub...")
