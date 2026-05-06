@@ -13,9 +13,10 @@ load_dotenv()
 
 # Lấy cấu hình từ .env
 THRESHOLD = float(os.getenv("THRESHOLD"))
-print(THRESHOLD)
+
 
 def build_interactive_graph(directory, threshold=THRESHOLD):
+    print(threshold)
     print("[*] Đang tải mô hình tiếng Việt...")
     model = SentenceTransformer('keepitreal/vietnamese-sbert')
     
@@ -36,7 +37,7 @@ def build_interactive_graph(directory, threshold=THRESHOLD):
 
     embeddings = model.encode(documents)
     sim_matrix = cosine_similarity(embeddings)
-    print(sim_matrix)
+    #print(sim_matrix)
 
     # Khởi tạo Network
     net = Network(height="750px", width="100%", bgcolor="#222222", font_color="white")

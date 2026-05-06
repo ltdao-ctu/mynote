@@ -31,7 +31,7 @@ class DocxHandler(FileSystemEventHandler):
 
 if __name__ == "__main__":
     if not SOURCE_PATH or not os.path.exists(SOURCE_PATH):
-        print("Đường dẫn trong .env không hợp lệ!")
+        print(f"Đường dẫn {SOURCE_PATH} trong .env không hợp lệ!")
     else:
         event_handler = DocxHandler()
         observer = Observer()
