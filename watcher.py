@@ -6,7 +6,8 @@ from doc2md import run_workflow # Import hàm từ script cũ của bạn
 from dotenv import load_dotenv
 
 load_dotenv()
-SOURCE_PATH = os.getenv("SOURCE_DOCX_PATH")
+raw_source_path = os.getenv("SOURCE_DOCX_PATH", "")
+SOURCE_PATH = os.path.abspath(raw_source_path.strip().strip('"')) if raw_source_path else ""
 
 class DocxHandler(FileSystemEventHandler):
     """Lớp xử lý các sự kiện thay đổi file"""
@@ -14,6 +15,15 @@ class DocxHandler(FileSystemEventHandler):
     def __init__(self):
         self.last_trigger_time = 0
         self.debounce_seconds = 5  # Tránh trigger liên tục trong 5 giây
+
+    def dispatch(self, event):
+        if not event.is_directory:
+            src = getattr(event, 'src_path', '')
+            dest = getattr(event, 'dest_path', '')
+            if src.lower().endswith('.docx') or dest.lower().endswith('.docx'):
+                path = dest or src
+                print(f"\n[!] Event: {event.event_type} -> {path}")
+        super().dispatch(event)
     
     def on_modified(self, event):
         # Kiểm tra nếu file bị sửa đổi là file .docx
@@ -53,11 +63,12 @@ if __name__ == "__main__":
     if not SOURCE_PATH or not os.path.exists(SOURCE_PATH):
         print(f"Đường dẫn {SOURCE_PATH} trong .env không hợp lệ!")
     else:
+        watch_path = SOURCE_PATH if os.path.isdir(SOURCE_PATH) else os.path.dirname(SOURCE_PATH)
         event_handler = DocxHandler()
         observer = Observer()
-        observer.schedule(event_handler, SOURCE_PATH, recursive=True)
+        observer.schedule(event_handler, watch_path, recursive=True)
         
-        print(f"--- Đang giám sát thư mục: {SOURCE_PATH} ---")
+        print(f"--- Đang giám sát thư mục: {watch_path} ---")
         print("Bấm Ctrl+C để dừng.")
         
         observer.start()
