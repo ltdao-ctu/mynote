@@ -69,6 +69,7 @@ def run_workflow():
         return
 
     current_dir = os.getcwd()
+    kb_dir = os.path.join(current_dir, KB_FOLDER)
     # Scan đệ quy tất cả file .docx trong thư mục và subfolders
     docx_files = []
     for root, dirs, files in os.walk(SOURCE_PATH):
@@ -105,11 +106,12 @@ def run_workflow():
                 pypandoc.convert_file(docx_path, to='gfm', format='docx', outputfile=md_path_source)
                 print(f" [+] Convert: {file_name_md}")
                 has_converted = True
-                new_md_files.append(relative_path)  # Lưu đường dẫn tương đối
                 
-                # Copy .md từ SOURCE_PATH về current_dir (giữ cấu trúc thư mục) - chỉ copy file vừa convert
+                # Copy .md từ SOURCE_PATH về current_dir/KB (giữ cấu trúc thư mục)
                 shutil.copy2(md_path_source, md_path_destination)
-                print(f" [+] Copy to repo: {relative_path}")
+                repo_relative_path = os.path.join(KB_FOLDER, relative_path)
+                new_md_files.append(repo_relative_path.replace('\\', '/'))
+                print(f" [+] Copy to repo: {repo_relative_path}")
             except Exception as e:
                 print(f" [!] Lỗi convert {file_name_md}: {e}")
                 continue
@@ -118,8 +120,8 @@ def run_workflow():
         print("-" * 40)
         if build_interactive_graph:
             print(">>> Thực thi build_interactive_graph...")
-            # Build graph từ SOURCE_PATH thay vì current_dir
-            build_interactive_graph(SOURCE_PATH)
+            # Build graph từ thư mục KB trong repo
+            build_interactive_graph(kb_dir, KB_FOLDER)
             
             # Đẩy lên GitHub (sử dụng INDEX_FILE từ .env)
             files_to_push = [INDEX_FILE] + new_md_files

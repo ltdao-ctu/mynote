@@ -29,7 +29,16 @@ if not exist ".venv\Scripts\activate.bat" (
 echo [+] Dang kich hoat virtual environment...
 call .venv\Scripts\activate.bat
 
-:: 6. Chạy watcher
+:: 6. Chờ Google Drive sẵn sàng
+echo [+] Dang cho Google Drive sync xong...
+python wait_google_drive.py
+if errorlevel 1 (
+    echo [!] Google Drive khong san sang. Hay kiem tra duong dan trong .env
+    pause
+    exit /b 1
+)
+
+:: 7. Chạy watcher
 echo [+] Dang chay watcher...
 python watcher.py
 

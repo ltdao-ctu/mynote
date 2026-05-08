@@ -1,4 +1,6 @@
 
+var BASE_MARKDOWN_PATH = 'KB';
+
 function bindMarkdownClickHandler() {
     if (typeof network === 'undefined') {
         console.error('Network object not found');
@@ -9,28 +11,20 @@ function bindMarkdownClickHandler() {
         console.log('Node clicked:', params);
         if (params.nodes.length > 0) {
             var nodeId = params.nodes[0];
-            console.log('Loading content for node:', nodeId);
-            
-            // Load nội dung từ file JSON riêng
-            fetch('markdown_contents.json')
+            var markdownPath = BASE_MARKDOWN_PATH + '/' + encodeURI(nodeId);
+            console.log('Loading content for node:', nodeId, 'from', markdownPath);
+
+            fetch(markdownPath)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('HTTP error ' + response.status);
                     }
-                    return response.json();
+                    return response.text();
                 })
-                .then(data => {
-                    console.log('Loaded data keys:', Object.keys(data));
-                    var content = data[nodeId];
-                    if (content) {
-                        console.log('Found content for node:', nodeId);
-                        document.getElementById('markdown-body').innerHTML = marked.parse(content);
-                        var modal = new bootstrap.Modal(document.getElementById('markdownModal'));
-                        modal.show();
-                    } else {
-                        console.error('Không tìm thấy nội dung cho node:', nodeId, 'Available keys:', Object.keys(data));
-                        alert('Không tìm thấy nội dung cho file này');
-                    }
+                .then(content => {
+                    document.getElementById('markdown-body').innerHTML = marked.parse(content);
+                    var modal = new bootstrap.Modal(document.getElementById('markdownModal'));
+                    modal.show();
                 })
                 .catch(error => {
                     console.error('Lỗi khi load nội dung:', error);

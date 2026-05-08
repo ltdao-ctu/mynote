@@ -4,7 +4,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import normalize
 from pyvis.network import Network
 import numpy as np
-import json
 import re
 
 from dotenv import load_dotenv # Thêm thư viện này
@@ -14,7 +13,7 @@ load_dotenv()
 
 # Lấy cấu hình từ .env
 THRESHOLD = float(os.getenv("THRESHOLD"))
-KB_PATH = os.getenv("KB_PATH")
+KB_PATH = os.getenv("KB_PATH", "KB")
 
 
 def clean_markdown_content(text):
@@ -45,10 +44,13 @@ def clean_markdown_content(text):
 
 
 
-def build_interactive_graph(directory, threshold=THRESHOLD):
+def build_interactive_graph(directory, content_root=None, threshold=THRESHOLD):
     print(threshold)
     print("[*] Loading Vietnamese model...")
     model = SentenceTransformer('keepitreal/vietnamese-sbert')
+    
+    if content_root is None:
+        content_root = KB_PATH
     
     # Quét đệ quy tất cả file .md trong thư mục và subfolders
     files = []
@@ -56,13 +58,12 @@ def build_interactive_graph(directory, threshold=THRESHOLD):
         for file in files_in_dir:
             if file.endswith('.md'):
                 # Lưu đường dẫn tương đối từ directory gốc
-                relative_path = os.path.relpath(os.path.join(root, file), directory)
+                relative_path = os.path.relpath(os.path.join(root, file), directory).replace(os.sep, '/')
                 files.append(relative_path)
     
     documents = []
     valid_files = []
-    file_contents = {}
-
+    
     for file in files:
         file_path = os.path.join(directory, file)
         with open(file_path, 'r', encoding='utf-8') as f:
@@ -72,7 +73,6 @@ def build_interactive_graph(directory, threshold=THRESHOLD):
                 cleaned_content = clean_markdown_content(content)
                 documents.append(cleaned_content)
                 valid_files.append(file)
-                file_contents[file] = content  # Giữ nội dung gốc cho hiển thị
 
     if not valid_files: return
 
@@ -183,87 +183,78 @@ def build_interactive_graph(directory, threshold=THRESHOLD):
     # Xóa tất cả click handler cũ
     html_content = re.sub(r'network\.on\("click".*?\}\);', '', html_content, flags=re.DOTALL)
 
-    # Ghi file main.js với handler ngoài (không chứa nội dung markdown)
-    main_js = '''
-function bindMarkdownClickHandler() {
-    if (typeof network === 'undefined') {
+    # Ghi file main.js với handler ngoài (tải markdown on-demand)
+    content_root_js = content_root.replace('\\', '/')
+    main_js = f'''
+var BASE_MARKDOWN_PATH = '{content_root_js}';
+
+function bindMarkdownClickHandler() {{
+    if (typeof network === 'undefined') {{
         console.error('Network object not found');
         return;
-    }
+    }}
 
-    network.on("click", function (params) {
+    network.on("click", function (params) {{
         console.log('Node clicked:', params);
-        if (params.nodes.length > 0) {
+        if (params.nodes.length > 0) {{
             var nodeId = params.nodes[0];
-            console.log('Loading content for node:', nodeId);
-            
-            // Load nội dung từ file JSON riêng
-            fetch('markdown_contents.json')
-                .then(response => {
-                    if (!response.ok) {
+            var markdownPath = BASE_MARKDOWN_PATH + '/' + encodeURI(nodeId);
+            console.log('Loading content for node:', nodeId, 'from', markdownPath);
+
+            fetch(markdownPath)
+                .then(response => {{
+                    if (!response.ok) {{
                         throw new Error('HTTP error ' + response.status);
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('Loaded data keys:', Object.keys(data));
-                    var content = data[nodeId];
-                    if (content) {
-                        console.log('Found content for node:', nodeId);
-                        document.getElementById('markdown-body').innerHTML = marked.parse(content);
-                        var modal = new bootstrap.Modal(document.getElementById('markdownModal'));
-                        modal.show();
-                    } else {
-                        console.error('Không tìm thấy nội dung cho node:', nodeId, 'Available keys:', Object.keys(data));
-                        alert('Không tìm thấy nội dung cho file này');
-                    }
-                })
-                .catch(error => {
+                    }}
+                    return response.text();
+                }})
+                .then(content => {{
+                    document.getElementById('markdown-body').innerHTML = marked.parse(content);
+                    var modal = new bootstrap.Modal(document.getElementById('markdownModal'));
+                    modal.show();
+                }})
+                .catch(error => {{
                     console.error('Lỗi khi load nội dung:', error);
                     alert('Lỗi khi tải nội dung: ' + error.message);
-                });
-        }
-    });
-}
+                }});
+        }}
+    }});
+}}
 
-function disablePhysicsAfterStabilization() {
-    if (typeof network === 'undefined') {
+function disablePhysicsAfterStabilization() {{
+    if (typeof network === 'undefined') {{
         return;
-    }
+    }}
     
-    network.once('stabilizationIterationsDone', function() {
-        network.setOptions({ physics: false });
+    network.once('stabilizationIterationsDone', function() {{
+        network.setOptions({{ physics: false }});
         console.log('Graph stabilized and physics disabled');
-    });
-}
+    }});
+}}
 
 // Đảm bảo marked.js đã load
-function waitForMarked(callback) {
-    if (typeof marked !== 'undefined') {
+function waitForMarked(callback) {{
+    if (typeof marked !== 'undefined') {{
         callback();
-    } else {
-        setTimeout(function() { waitForMarked(callback); }, 100);
-    }
-}
+    }} else {{
+        setTimeout(function() {{ waitForMarked(callback); }}, 100);
+    }}
+}}
 
-waitForMarked(function() {
-    if (document.readyState === 'complete') {
+waitForMarked(function() {{
+    if (document.readyState === 'complete') {{
         bindMarkdownClickHandler();
         disablePhysicsAfterStabilization();
-    } else {
-        window.addEventListener('load', function() {
+    }} else {{
+        window.addEventListener('load', function() {{
             bindMarkdownClickHandler();
             disablePhysicsAfterStabilization();
-        });
-    }
-});
+        }});
+    }}
+}});
 '''
     with open('main.js', 'w', encoding='utf-8') as f:
         f.write(main_js)
-
-    # Ghi nội dung markdown vào file JSON riêng
-    with open('markdown_contents.json', 'w', encoding='utf-8') as f:
-        json.dump(file_contents, f, ensure_ascii=False, indent=2)
 
     # Thêm tham chiếu đến main.js
     html_content = html_content.replace('</body>', '    <script src="main.js"></script>\n</body>')
