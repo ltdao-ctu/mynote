@@ -1,0 +1,7 @@
+# Các thư mục không cần index
+node_modules/
+dist/
+build/
+.git/
+venv/
+*.log

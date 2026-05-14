@@ -1,0 +1,1005 @@
+{
+    "metadata": {
+        "total_nodes": 42,
+        "total_edges": 47,
+        "threshold": 0.8
+    },
+    "nodes": [
+        {
+            "id": "AI/10 prompts Perplexity.md",
+            "label": "10 prompts Perplexity.md",
+            "group": "AI",
+            "value": 8,
+            "path": "AI/10 prompts Perplexity.md",
+            "title": "Click để xem nội dung: 10 prompts Perplexity.md"
+        },
+        {
+            "id": "AI/Automate Faceless Content.md",
+            "label": "Automate Faceless Content.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/Automate Faceless Content.md",
+            "title": "Click để xem nội dung: Automate Faceless Content.md"
+        },
+        {
+            "id": "AI/Chien luoc dai duong xanh.md",
+            "label": "Chien luoc dai duong xanh.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/Chien luoc dai duong xanh.md",
+            "title": "Click để xem nội dung: Chien luoc dai duong xanh.md"
+        },
+        {
+            "id": "AI/Chonkie - Table Chunker.md",
+            "label": "Chonkie - Table Chunker.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/Chonkie - Table Chunker.md",
+            "title": "Click để xem nội dung: Chonkie - Table Chunker.md"
+        },
+        {
+            "id": "AI/Claude Video.md",
+            "label": "Claude Video.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/Claude Video.md",
+            "title": "Click để xem nội dung: Claude Video.md"
+        },
+        {
+            "id": "AI/CopilotKit.md",
+            "label": "CopilotKit.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/CopilotKit.md",
+            "title": "Click để xem nội dung: CopilotKit.md"
+        },
+        {
+            "id": "AI/DeepSeek ds2api.md",
+            "label": "DeepSeek ds2api.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/DeepSeek ds2api.md",
+            "title": "Click để xem nội dung: DeepSeek ds2api.md"
+        },
+        {
+            "id": "AI/Faster Qwen3 TTS.md",
+            "label": "Faster Qwen3 TTS.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/Faster Qwen3 TTS.md",
+            "title": "Click để xem nội dung: Faster Qwen3 TTS.md"
+        },
+        {
+            "id": "AI/Gen lich su va tuong lai cua nhan loai.md",
+            "label": "Gen lich su va tuong lai cua nhan loai.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/Gen lich su va tuong lai cua nhan loai.md",
+            "title": "Click để xem nội dung: Gen lich su va tuong lai cua nhan loai.md"
+        },
+        {
+            "id": "AI/GeoAI.md",
+            "label": "GeoAI.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/GeoAI.md",
+            "title": "Click để xem nội dung: GeoAI.md"
+        },
+        {
+            "id": "AI/IndexTTS Workflow Studio.md",
+            "label": "IndexTTS Workflow Studio.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/IndexTTS Workflow Studio.md",
+            "title": "Click để xem nội dung: IndexTTS Workflow Studio.md"
+        },
+        {
+            "id": "AI/InvokeAI.md",
+            "label": "InvokeAI.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/InvokeAI.md",
+            "title": "Click để xem nội dung: InvokeAI.md"
+        },
+        {
+            "id": "AI/Kanwas chatbot.md",
+            "label": "Kanwas chatbot.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/Kanwas chatbot.md",
+            "title": "Click để xem nội dung: Kanwas chatbot.md"
+        },
+        {
+            "id": "AI/Linh hon quang cao.md",
+            "label": "Linh hon quang cao.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/Linh hon quang cao.md",
+            "title": "Click để xem nội dung: Linh hon quang cao.md"
+        },
+        {
+            "id": "AI/MarkItDown.md",
+            "label": "MarkItDown.md",
+            "group": "AI",
+            "value": 9,
+            "path": "AI/MarkItDown.md",
+            "title": "Click để xem nội dung: MarkItDown.md"
+        },
+        {
+            "id": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "label": "MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "title": "Click để xem nội dung: MinerU2.5-Pro-2604-1.2B pdf to md.md"
+        },
+        {
+            "id": "AI/model ZAYA1-8B.md",
+            "label": "model ZAYA1-8B.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/model ZAYA1-8B.md",
+            "title": "Click để xem nội dung: model ZAYA1-8B.md"
+        },
+        {
+            "id": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "label": "Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "title": "Click để xem nội dung: Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md"
+        },
+        {
+            "id": "AI/obsidian-skills.md",
+            "label": "obsidian-skills.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/obsidian-skills.md",
+            "title": "Click để xem nội dung: obsidian-skills.md"
+        },
+        {
+            "id": "AI/Plumio KB.md",
+            "label": "Plumio KB.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/Plumio KB.md",
+            "title": "Click để xem nội dung: Plumio KB.md"
+        },
+        {
+            "id": "AI/Pocket TTS.md",
+            "label": "Pocket TTS.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/Pocket TTS.md",
+            "title": "Click để xem nội dung: Pocket TTS.md"
+        },
+        {
+            "id": "AI/Pomelli Catalog.md",
+            "label": "Pomelli Catalog.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/Pomelli Catalog.md",
+            "title": "Click để xem nội dung: Pomelli Catalog.md"
+        },
+        {
+            "id": "AI/ProxyWhirl web scraping.md",
+            "label": "ProxyWhirl web scraping.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/ProxyWhirl web scraping.md",
+            "title": "Click để xem nội dung: ProxyWhirl web scraping.md"
+        },
+        {
+            "id": "AI/Qwen-Lens-Studio.md",
+            "label": "Qwen-Lens-Studio.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/Qwen-Lens-Studio.md",
+            "title": "Click để xem nội dung: Qwen-Lens-Studio.md"
+        },
+        {
+            "id": "AI/Rapid-MLX.md",
+            "label": "Rapid-MLX.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/Rapid-MLX.md",
+            "title": "Click để xem nội dung: Rapid-MLX.md"
+        },
+        {
+            "id": "AI/Repository Understand-Anything.md",
+            "label": "Repository Understand-Anything.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/Repository Understand-Anything.md",
+            "title": "Click để xem nội dung: Repository Understand-Anything.md"
+        },
+        {
+            "id": "AI/SiYuan PKM.md",
+            "label": "SiYuan PKM.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/SiYuan PKM.md",
+            "title": "Click để xem nội dung: SiYuan PKM.md"
+        },
+        {
+            "id": "Kinh te/Chien luoc dai duong xanh.md",
+            "label": "Chien luoc dai duong xanh.md",
+            "group": "Kinh te",
+            "value": 5,
+            "path": "Kinh te/Chien luoc dai duong xanh.md",
+            "title": "Click để xem nội dung: Chien luoc dai duong xanh.md"
+        },
+        {
+            "id": "Kinh te/Hieu ngheo thoat ngheo.md",
+            "label": "Hieu ngheo thoat ngheo.md",
+            "group": "Kinh te",
+            "value": 5,
+            "path": "Kinh te/Hieu ngheo thoat ngheo.md",
+            "title": "Click để xem nội dung: Hieu ngheo thoat ngheo.md"
+        },
+        {
+            "id": "Kinh te/Linh hon quang cao.md",
+            "label": "Linh hon quang cao.md",
+            "group": "Kinh te",
+            "value": 5,
+            "path": "Kinh te/Linh hon quang cao.md",
+            "title": "Click để xem nội dung: Linh hon quang cao.md"
+        },
+        {
+            "id": "Quan tri/Siêu đội ngũ.md",
+            "label": "Siêu đội ngũ.md",
+            "group": "Quan tri",
+            "value": 5,
+            "path": "Quan tri/Siêu đội ngũ.md",
+            "title": "Click để xem nội dung: Siêu đội ngũ.md"
+        },
+        {
+            "id": "Quan tri/Tu tot den vi dai.md",
+            "label": "Tu tot den vi dai.md",
+            "group": "Quan tri",
+            "value": 5,
+            "path": "Quan tri/Tu tot den vi dai.md",
+            "title": "Click để xem nội dung: Tu tot den vi dai.md"
+        },
+        {
+            "id": "Sinh hoc/Ban Mai Tre.md",
+            "label": "Ban Mai Tre.md",
+            "group": "Sinh hoc",
+            "value": 5,
+            "path": "Sinh hoc/Ban Mai Tre.md",
+            "title": "Click để xem nội dung: Ban Mai Tre.md"
+        },
+        {
+            "id": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
+            "label": "Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
+            "group": "Sinh hoc",
+            "value": 5,
+            "path": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
+            "title": "Click để xem nội dung: Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md"
+        },
+        {
+            "id": "Sinh hoc/Gen lich su va tuong lai cua nhan loai.md",
+            "label": "Gen lich su va tuong lai cua nhan loai.md",
+            "group": "Sinh hoc",
+            "value": 5,
+            "path": "Sinh hoc/Gen lich su va tuong lai cua nhan loai.md",
+            "title": "Click để xem nội dung: Gen lich su va tuong lai cua nhan loai.md"
+        },
+        {
+            "id": "Triet ly song/Bai giang cuoi cung.md",
+            "label": "Bai giang cuoi cung.md",
+            "group": "Triet ly song",
+            "value": 5,
+            "path": "Triet ly song/Bai giang cuoi cung.md",
+            "title": "Click để xem nội dung: Bai giang cuoi cung.md"
+        },
+        {
+            "id": "Triet ly song/Be Useful Seven Tools for Life.md",
+            "label": "Be Useful Seven Tools for Life.md",
+            "group": "Triet ly song",
+            "value": 5,
+            "path": "Triet ly song/Be Useful Seven Tools for Life.md",
+            "title": "Click để xem nội dung: Be Useful Seven Tools for Life.md"
+        },
+        {
+            "id": "Triet ly song/Tu hoc – Mot nhu cau thoi dai.md",
+            "label": "Tu hoc – Mot nhu cau thoi dai.md",
+            "group": "Triet ly song",
+            "value": 5,
+            "path": "Triet ly song/Tu hoc – Mot nhu cau thoi dai.md",
+            "title": "Click để xem nội dung: Tu hoc – Mot nhu cau thoi dai.md"
+        },
+        {
+            "id": "Van hoc/Chiec thia bac.md",
+            "label": "Chiec thia bac.md",
+            "group": "Van hoc",
+            "value": 5,
+            "path": "Van hoc/Chiec thia bac.md",
+            "title": "Click để xem nội dung: Chiec thia bac.md"
+        },
+        {
+            "id": "Van hoc/Hieu sach cuoi cung o London.md",
+            "label": "Hieu sach cuoi cung o London.md",
+            "group": "Van hoc",
+            "value": 5,
+            "path": "Van hoc/Hieu sach cuoi cung o London.md",
+            "title": "Click để xem nội dung: Hieu sach cuoi cung o London.md"
+        },
+        {
+            "id": "Van hoc/Huyen thoai mua thu.md",
+            "label": "Huyen thoai mua thu.md",
+            "group": "Van hoc",
+            "value": 5,
+            "path": "Van hoc/Huyen thoai mua thu.md",
+            "title": "Click để xem nội dung: Huyen thoai mua thu.md"
+        },
+        {
+            "id": "Van hoc/Tinh yeu xanh tham.md",
+            "label": "Tinh yeu xanh tham.md",
+            "group": "Van hoc",
+            "value": 5,
+            "path": "Van hoc/Tinh yeu xanh tham.md",
+            "title": "Click để xem nội dung: Tinh yeu xanh tham.md"
+        }
+    ],
+    "edges": [
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/IndexTTS Workflow Studio.md",
+            "weight": 0.807,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/DeepSeek ds2api.md",
+            "weight": 0.872,
+            "label": "87%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/Faster Qwen3 TTS.md",
+            "weight": 0.821,
+            "label": "82%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/IndexTTS Workflow Studio.md",
+            "weight": 0.85,
+            "label": "84%",
+            "color": {
+                "opacity": 0.85,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/InvokeAI.md",
+            "weight": 0.853,
+            "label": "85%",
+            "color": {
+                "opacity": 0.85,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/Kanwas chatbot.md",
+            "weight": 0.848,
+            "label": "84%",
+            "color": {
+                "opacity": 0.85,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "weight": 0.846,
+            "label": "84%",
+            "color": {
+                "opacity": 0.85,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.805,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.858,
+            "label": "85%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.861,
+            "label": "86%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/InvokeAI.md",
+            "weight": 0.807,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/Kanwas chatbot.md",
+            "weight": 0.831,
+            "label": "83%",
+            "color": {
+                "opacity": 0.83,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "weight": 0.844,
+            "label": "84%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.836,
+            "label": "83%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.822,
+            "label": "82%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.835,
+            "label": "83%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.886,
+            "label": "88%",
+            "color": {
+                "opacity": 0.89,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.852,
+            "label": "85%",
+            "color": {
+                "opacity": 0.85,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/IndexTTS Workflow Studio.md",
+            "weight": 0.835,
+            "label": "83%",
+            "color": {
+                "opacity": 0.83,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/GeoAI.md",
+            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "weight": 0.835,
+            "label": "83%",
+            "color": {
+                "opacity": 0.83,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/GeoAI.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.86,
+            "label": "85%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/IndexTTS Workflow Studio.md",
+            "to": "AI/InvokeAI.md",
+            "weight": 0.832,
+            "label": "83%",
+            "color": {
+                "opacity": 0.83,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/IndexTTS Workflow Studio.md",
+            "to": "AI/Kanwas chatbot.md",
+            "weight": 0.84,
+            "label": "84%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/IndexTTS Workflow Studio.md",
+            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "weight": 0.824,
+            "label": "82%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/InvokeAI.md",
+            "to": "AI/Kanwas chatbot.md",
+            "weight": 0.835,
+            "label": "83%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/InvokeAI.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.827,
+            "label": "82%",
+            "color": {
+                "opacity": 0.83,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "weight": 0.823,
+            "label": "82%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.805,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.805,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.821,
+            "label": "82%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.8,
+            "label": "80%",
+            "color": {
+                "opacity": 0.8,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MarkItDown.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.811,
+            "label": "81%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MarkItDown.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.82,
+            "label": "81%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.871,
+            "label": "87%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/obsidian-skills.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.808,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Plumio KB.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.808,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Plumio KB.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.808,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Plumio KB.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.818,
+            "label": "81%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/ProxyWhirl web scraping.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.804,
+            "label": "80%",
+            "color": {
+                "opacity": 0.8,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/ProxyWhirl web scraping.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.829,
+            "label": "82%",
+            "color": {
+                "opacity": 0.83,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Rapid-MLX.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.821,
+            "label": "82%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Kinh te/Hieu ngheo thoat ngheo.md",
+            "to": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
+            "weight": 0.817,
+            "label": "81%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Quan tri/Siêu đội ngũ.md",
+            "to": "Quan tri/Tu tot den vi dai.md",
+            "weight": 0.825,
+            "label": "82%",
+            "color": {
+                "opacity": 0.83,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Sinh hoc/Ban Mai Tre.md",
+            "to": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
+            "weight": 0.869,
+            "label": "86%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Sinh hoc/Ban Mai Tre.md",
+            "to": "Triet ly song/Bai giang cuoi cung.md",
+            "weight": 0.804,
+            "label": "80%",
+            "color": {
+                "opacity": 0.8,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
+            "to": "Triet ly song/Bai giang cuoi cung.md",
+            "weight": 0.815,
+            "label": "81%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
+            "to": "Triet ly song/Tu hoc – Mot nhu cau thoi dai.md",
+            "weight": 0.809,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        }
+    ]
+}
