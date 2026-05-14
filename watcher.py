@@ -15,9 +15,19 @@ except ImportError:
 load_dotenv()
 raw_source_path = os.getenv("SOURCE_DOCX_PATH", "")
 SOURCE_PATH = os.path.abspath(raw_source_path.strip().strip('"')) if raw_source_path else ""
+
+raw_obsidian_path = os.getenv("OBSIDIAN_PATH", "")
+OBSIDIAN_PATH = os.path.abspath(raw_obsidian_path.strip().strip('"')) if raw_obsidian_path else ""
+
 KB_FOLDER = os.getenv("KB_PATH", "KB")
 CURRENT_DIR = os.getcwd()
 KB_PATH = os.path.join(CURRENT_DIR, KB_FOLDER)
+
+# Dictionary lưu đường dẫn đang được theo dõi
+WATCHED_PATHS = {
+    "SOURCE": SOURCE_PATH,
+    "OBSIDIAN": OBSIDIAN_PATH
+}
 
 class DocxHandler(FileSystemEventHandler):
     """Lớp xử lý các sự kiện thay đổi file"""
@@ -62,7 +72,11 @@ class DocxHandler(FileSystemEventHandler):
                 self.process_new_md(event.dest_path)
 
     def process_new_md(self, md_path):
-        """Xử lý file md mới: kiểm tra xem có docx trùng tên, nếu không thì copy và tạo graph"""
+        """
+        Xử lý file md mới: 
+        1. Copy chéo giữa SOURCE và OBSIDIAN.
+        2. Copy về KB và giữ nguyên cấu trúc thư mục.
+        """
         current_time = time.time()
         if current_time - self.last_trigger_time < self.debounce_seconds:
             print(f"--- Bỏ qua trigger (debounce {self.debounce_seconds}s) ---")
@@ -73,37 +87,58 @@ class DocxHandler(FileSystemEventHandler):
         try:
             md_filename = os.path.basename(md_path)
             md_name_without_ext = os.path.splitext(md_filename)[0]
+            md_dir = os.path.normpath(os.path.dirname(md_path))
             
-            # Kiểm tra xem có docx trùng tên không
-            docx_filename = md_name_without_ext + ".docx"
-            docx_path = os.path.join(os.path.dirname(md_path), docx_filename)
+            # Xác định nguồn và đích để đồng bộ chéo
+            sync_destination = None
+            base_source_path = None
             
-            if os.path.exists(docx_path):
-                print(f" [i] Tìm thấy file DOCX trùng tên: {docx_path}")
-                print(f" [!] Bỏ qua file MD '{md_filename}' vì có DOCX trùng tên")
+            if SOURCE_PATH and md_dir.startswith(SOURCE_PATH):
+                base_source_path = SOURCE_PATH
+                sync_destination = OBSIDIAN_PATH
+                print(f" [*] Phát hiện file MD mới từ SOURCE: {md_filename}")
+            elif OBSIDIAN_PATH and md_dir.startswith(OBSIDIAN_PATH):
+                base_source_path = OBSIDIAN_PATH
+                sync_destination = SOURCE_PATH
+                print(f" [*] Phát hiện file MD mới từ OBSIDIAN: {md_filename}")
+
+            if not base_source_path:
                 return
+
+            # Kiểm tra xem có file DOCX trùng tên không (tránh ghi đè file do workflow tạo ra)
+            if os.path.exists(os.path.join(md_dir, md_name_without_ext + ".docx")):
+                print(f" [i] Bỏ qua file MD '{md_filename}' vì có DOCX trùng tên.")
+                return
+
+            # Tính toán đường dẫn tương đối (ví dụ: "Math/Algebra")
+            relative_path = os.path.relpath(md_dir, base_source_path)
+
+            # 1. THỰC HIỆN ĐỒNG BỘ CHÉO (SOURCE <-> OBSIDIAN)
+            if sync_destination:
+                cross_sync_dir = os.path.join(sync_destination, relative_path)
+                os.makedirs(cross_sync_dir, exist_ok=True)
+                cross_sync_path = os.path.join(cross_sync_dir, md_filename)
+                
+                # Kiểm tra tránh copy đè nếu file đã tồn tại và giống hệt (tránh loop vô tận)
+                if not os.path.exists(cross_sync_path):
+                    shutil.copy2(md_path, cross_sync_path)
+                    print(f" [+] Đã đồng bộ chéo sang: {cross_sync_path}")
+
+            # 2. THỰC HIỆN COPY VỀ KB_PATH
+            target_kb_dir = os.path.join(KB_PATH, relative_path)
+            os.makedirs(target_kb_dir, exist_ok=True)
+            dest_kb_path = os.path.join(target_kb_dir, md_filename)
             
-            # Nếu không có DOCX trùng tên, copy file MD về KB folder
-            print(f">>> Không tìm thấy DOCX trùng tên. Đang copy '{md_filename}' về KB...")
-            
-            # Tạo thư mục KB nếu chưa có
-            os.makedirs(KB_PATH, exist_ok=True)
-            
-            # Copy file về KB folder
-            dest_path = os.path.join(KB_PATH, md_filename)
-            shutil.copy2(md_path, dest_path)
-            print(f" [+] Đã copy: {md_filename} -> {dest_path}")
-            
-            # Tạo graph từ file md mới
+            shutil.copy2(md_path, dest_kb_path)
+            print(f" [+] Đã cập nhật KB: {dest_kb_path}")
+
+            # 3. TẠO GRAPH
             if build_interactive_graph:
                 print(">>> Đang xây dựng lại graph...")
                 build_interactive_graph(KB_PATH, KB_FOLDER)
-                print(">>> Hoàn thành xây dựng graph.")
-            else:
-                print(" [!] Không thể tạo graph: module semantic_knowledge_graph không sẵn sàng")
                 
         except Exception as e:
-            print(f" [!] Lỗi xử lý file MD: {e}")
+            print(f" [!] Lỗi trong quá trình đồng bộ: {e}")
 
     def trigger_process(self):
         current_time = time.time()
@@ -122,24 +157,47 @@ class DocxHandler(FileSystemEventHandler):
         print(">>> Đang tiếp tục giám sát...")
 
 if __name__ == "__main__":
-    if not SOURCE_PATH or not os.path.exists(SOURCE_PATH):
-        print(f"Đường dẫn {SOURCE_PATH} trong .env không hợp lệ!")
-    else:
+    observer = Observer()
+    event_handler = DocxHandler()
+    monitored_paths = []
+    
+    # Theo dõi SOURCE_DOCX_PATH
+    if SOURCE_PATH and os.path.exists(SOURCE_PATH):
         watch_path = SOURCE_PATH if os.path.isdir(SOURCE_PATH) else os.path.dirname(SOURCE_PATH)
-        event_handler = DocxHandler()
-        observer = Observer()
         observer.schedule(event_handler, watch_path, recursive=True)
-        
-        print(f"--- Đang giám sát thư mục: {watch_path} ---")
-        print(f"--- KB folder: {KB_PATH} ---")
-        print("--- Giám sát file .docx để chuyển đổi MD ---")
-        print("--- Giám sát file .md mới để check docx & copy về KB ---")
-        print("Bấm Ctrl+C để dừng.")
-        
-        observer.start()
-        try:
-            while True:
-                time.sleep(1) # Giữ cho script luôn chạy
-        except KeyboardInterrupt:
-            observer.stop()
-        observer.join()
+        monitored_paths.append(f"SOURCE: {watch_path}")
+        print(f"[✓] Đang giám sát SOURCE_DOCX_PATH: {watch_path}")
+    else:
+        print(f"[!] SOURCE_DOCX_PATH không hợp lệ: {SOURCE_PATH}")
+    
+    # Theo dõi OBSIDIAN_PATH
+    if OBSIDIAN_PATH and os.path.exists(OBSIDIAN_PATH):
+        watch_path = OBSIDIAN_PATH if os.path.isdir(OBSIDIAN_PATH) else os.path.dirname(OBSIDIAN_PATH)
+        observer.schedule(event_handler, watch_path, recursive=True)
+        monitored_paths.append(f"OBSIDIAN: {watch_path}")
+        print(f"[✓] Đang giám sát OBSIDIAN_PATH: {watch_path}")
+    else:
+        print(f"[!] OBSIDIAN_PATH không hợp lệ: {OBSIDIAN_PATH}")
+    
+    if not monitored_paths:
+        print("[!] Không có đường dẫn hợp lệ để giám sát. Kiểm tra file .env")
+        exit(1)
+    
+    print(f"\n--- Cấu hình giám sát ---")
+    for path_info in monitored_paths:
+        print(f"  {path_info}")
+    print(f"--- KB folder: {KB_PATH} ---")
+    print("--- Giám sát file .docx để chuyển đổi MD ---")
+    print("--- Giám sát file .md mới từ OBSIDIAN & SOURCE để copy về KB ---")
+    print("--- Tự động tạo knowledge graph ---")
+    print("Bấm Ctrl+C để dừng.\n")
+    
+    observer.start()
+    try:
+        while True:
+            time.sleep(1) # Giữ cho script luôn chạy
+    except KeyboardInterrupt:
+        print("\n[*] Dừng giám sát...")
+        observer.stop()
+    observer.join()
+    print("[*] Đã dừng giám sát.")

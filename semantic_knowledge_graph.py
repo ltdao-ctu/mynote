@@ -1,269 +1,130 @@
 import os
+import json
+import numpy as np
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.preprocessing import normalize
-from pyvis.network import Network
-import numpy as np
-import re
+from dotenv import load_dotenv
 
-from dotenv import load_dotenv # Thêm thư viện này
-
-# Nạp các biến môi trường từ file .env
+# 1. CẤU HÌNH HỆ THỐNG
 load_dotenv()
-
-# Lấy cấu hình từ .env
-THRESHOLD = float(os.getenv("THRESHOLD"))
+THRESHOLD = float(os.getenv("THRESHOLD", "0.4"))
 KB_PATH = os.getenv("KB_PATH", "KB")
 
+def get_file_metadata(file_path):
+    """Trích xuất thông tin cơ bản của file"""
+    stats = os.stat(file_path)
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+        word_count = len(content.split())
+    
+    # Lấy tên thư mục cha để làm Category
+    category = os.path.dirname(file_path).split(os.sep)[-1]
+    if category == KB_PATH or not category:
+        category = "Chung"
+        
+    return {
+        "size_kb": round(stats.st_size / 1024, 2),
+        "word_count": word_count,
+        "category": category
+    }
 
-def clean_markdown_content(text):
-    """Làm sạch nội dung Markdown để embedding tốt hơn"""
-    # Xóa code blocks
-    text = re.sub(r'```[\s\S]*?```', '', text)
-    text = re.sub(r'`[^`]+`', '', text)
-    
-    # Xóa links nhưng giữ text
-    text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
-    
-    # Xóa image syntax
-    text = re.sub(r'!\[([^\]]*)\]\([^\)]+\)', '', text)
-    
-    # Xóa HTML tags
-    text = re.sub(r'<[^>]+>', '', text)
-    
-    # Xóa markdown syntax (*, #, -, etc)
-    text = re.sub(r'^#+\s+', '', text, flags=re.MULTILINE)
-    text = re.sub(r'^\*+\s+', '', text, flags=re.MULTILINE)
-    text = re.sub(r'^-+\s+', '', text, flags=re.MULTILINE)
-    
-    # Xóa extra whitespace
-    text = re.sub(r'\s+', ' ', text)
-    text = text.strip()
-    
-    return text
+def clean_markdown(text):
+    """Loại bỏ bớt ký tự thừa để SBERT xử lý chính xác hơn"""
+    lines = [line.strip() for line in text.splitlines() if line.strip()]
+    return " ".join(lines)[:2000]  # Giới hạn 2000 ký tự đầu để tăng tốc
 
+def build_semantic_graph():
+    if not os.path.exists(KB_PATH):
+        print(f"[!] Thư mục {KB_PATH} không tồn tại!")
+        return
 
-
-def build_interactive_graph(directory, content_root=None, threshold=THRESHOLD):
-    print(threshold)
-    print("[*] Loading Vietnamese model...")
+    # 2. TẢI MODEL (Chuyên dụng cho tiếng Việt)
+    print("[*] Đang khởi tạo trí tuệ nhân tạo (Vietnamese-SBERT)...")
     model = SentenceTransformer('keepitreal/vietnamese-sbert')
     
-    if content_root is None:
-        content_root = KB_PATH
-    
-    # Quét đệ quy tất cả file .md trong thư mục và subfolders
-    files = []
-    for root, dirs, files_in_dir in os.walk(directory):
-        for file in files_in_dir:
-            if file.endswith('.md'):
-                # Lưu đường dẫn tương đối từ directory gốc
-                relative_path = os.path.relpath(os.path.join(root, file), directory).replace(os.sep, '/')
-                files.append(relative_path)
-    
+    file_list = []
     documents = []
-    valid_files = []
-    
-    for file in files:
-        file_path = os.path.join(directory, file)
-        with open(file_path, 'r', encoding='utf-8') as f:
-            content = f.read().strip()
-            if len(content) > 10:
-                # Làm sạch markdown syntax trước embedding
-                cleaned_content = clean_markdown_content(content)
-                documents.append(cleaned_content)
-                valid_files.append(file)
 
-    if not valid_files: return
+    # 3. QUÉT DỮ LIỆU
+    print(f"[*] Đang đọc dữ liệu từ: {KB_PATH}...")
+    for root, _, filenames in os.walk(KB_PATH):
+        for filename in filenames:
+            if filename.endswith('.md'):
+                full_path = os.path.join(root, filename)
+                rel_id = os.path.relpath(full_path, KB_PATH).replace(os.sep, '/')
+                
+                try:
+                    with open(full_path, 'r', encoding='utf-8') as f:
+                        raw_content = f.read().strip()
+                        if len(raw_content) > 15: # Bỏ qua file quá ngắn
+                            meta = get_file_metadata(full_path)
+                            file_list.append({
+                                "id": rel_id,
+                                "name": filename,
+                                **meta
+                            })
+                            documents.append(clean_markdown(raw_content))
+                except Exception as e:
+                    print(f"[!] Lỗi đọc file {filename}: {e}")
 
-    embeddings = model.encode(documents)
+    if not documents:
+        print("[!] Không có dữ liệu để xử lý.")
+        return
+
+    # 4. TÍNH TOÁN NGỮ NGHĨA
+    print(f"[*] Đang tính toán liên kết cho {len(file_list)} tài liệu...")
+    embeddings = model.encode(documents, show_progress_bar=True)
     sim_matrix = cosine_similarity(embeddings)
-    
-    # Normalize similarity scores để dễ debug
-    print(f"[*] Similarity scores - Min: {sim_matrix.min():.4f}, Max: {sim_matrix.max():.4f}, Mean: {sim_matrix.mean():.4f}")
-    print(f"[*] Threshold: {threshold}")
 
-    # Khởi tạo Network
-    net = Network(height="750px", width="100%", bgcolor="#222222", font_color="white")
-    net.force_atlas_2based()
-    
-    # Cấu hình vật lý: stabilize rồi dừng lại
-    net.set_options("""
-    var options = {
-      "physics": {
-        "enabled": true,
-        "forceAtlas2Based": {
-          "gravitationalConstant": -50,
-          "centralGravity": 0.01,
-          "springLength": 200,
-          "springConstant": 0.08,
-          "damping": 0.4,
-          "avoidOverlap": 0.1
-        },
-        "solver": "forceAtlas2Based",
-        "timestep": 0.35,
-        "stabilization": {
-          "iterations": 500,
-          "fit": true,
-          "updateInterval": 25
-        }
-      }
-    }
-    """)
+    nodes = []
+    edges = []
 
-    # Tính degree (số kết nối) của mỗi file
-    node_degrees = {file: 0 for file in valid_files}
-    edges_data = []
+    # Tạo Nodes
+    for info in file_list:
+        nodes.append({
+            "id": info["id"],
+            "label": info["name"],
+            "group": info["category"],
+            "value": max(info["word_count"] // 100, 5),
+            "path": info["id"], # Lưu đường dẫn tương đối để Fetch từ Server
+            "title": f"Click để xem nội dung: {info['name']}"
+        })
 
-    for i in range(len(valid_files)):
-        for j in range(i + 1, len(valid_files)):
+    # Tạo Edges (Đã lọc dư thừa)
+    for i in range(len(file_list)):
+        for j in range(i + 1, len(file_list)):
             score = float(sim_matrix[i][j])
-            if score > threshold:
-                edges_data.append((valid_files[i], valid_files[j], score))
-                node_degrees[valid_files[i]] += 1
-                node_degrees[valid_files[j]] += 1
+            
+            # CHỐNG DƯ THỪA: 
+            # - Chỉ lấy score > THRESHOLD
+            # - score < 0.98 để loại bỏ các file copy hoặc trùng lặp hoàn toàn
+            if THRESHOLD <= score < 0.98:
+                edges.append({
+                    "from": file_list[i]["id"],
+                    "to": file_list[j]["id"],
+                    "weight": round(score, 3),
+                    "label": f"{int(score*100)}%",
+                    "color": {"opacity": round(score, 2), "color": "#848484"},
+                    "font": {"size": 10, "align": "middle"}
+                })
 
-    # Tìm max degree để tính màu
-    max_degree = max(node_degrees.values()) if node_degrees.values() else 1
+    # 5. XUẤT FILE JSON
+    output_data = {
+        "metadata": {
+            "total_nodes": len(nodes),
+            "total_edges": len(edges),
+            "threshold": THRESHOLD
+        },
+        "nodes": nodes,
+        "edges": edges
+    }
 
-    # Thêm nodes với màu tùy theo degree
-    for i, file in enumerate(valid_files):
-        degree = node_degrees[file]
-        
-        # Tên node chỉ lấy tên file, không có thư mục
-        node_label = os.path.basename(file)
-        
-        # Tô màu dựa trên degree
-        if degree == 0:
-            color = "#00ffcc"  # Xanh - không có kết nối
-        elif degree <= max_degree / 3:
-            color = "#ffcc00"  # Vàng - kết nối thấp
-        elif degree <= 2 * max_degree / 3:
-            color = "#ff9900"  # Cam - kết nối trung bình
-        else:
-            color = "#ff6b6b"  # Đỏ - kết nối cao
-        
-        net.add_node(file, label=node_label, title=f"Click để xem nội dung {node_label} (kết nối: {degree})", color=color)
+    with open('graph_data.json', 'w', encoding='utf-8') as f:
+        json.dump(output_data, f, ensure_ascii=False, indent=4)
 
-    # Thêm edges
-    for file1, file2, score in edges_data:
-        net.add_edge(file1, file2, value=score, weight=score)
-
-    # Xuất file HTML
-    output_path = "index.html"
-    net.save_graph(output_path)
-
-    # --- ĐOẠN CHÈN JS ĐỂ CLICK HIỂN THỊ MARKDOWN ---
-    # Đọc lại file vừa tạo để chèn mã
-    with open(output_path, 'r', encoding='utf-8') as f:
-        html_content = f.read()
-
-    # Thêm marked.js vào head
-    marked_script = '<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>'
-    html_content = html_content.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n' + marked_script)
-
-    # Thêm modal vào cuối body
-    modal_html = '''
-<div class="modal fade" id="markdownModal" tabindex="-1" aria-labelledby="markdownModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="markdownModalLabel">Nội dung Markdown</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div id="markdown-body"></div>
-      </div>
-    </div>
-  </div>
-</div>
-'''
-    html_content = html_content.replace('</body>', modal_html + '\n</body>')
-
-    # Xóa tất cả click handler cũ
-    html_content = re.sub(r'network\.on\("click".*?\}\);', '', html_content, flags=re.DOTALL)
-
-    # Ghi file main.js với handler ngoài (tải markdown on-demand)
-    content_root_js = content_root.replace('\\', '/')
-    main_js = f'''
-var BASE_MARKDOWN_PATH = '{content_root_js}';
-
-function bindMarkdownClickHandler() {{
-    if (typeof network === 'undefined') {{
-        console.error('Network object not found');
-        return;
-    }}
-
-    network.on("click", function (params) {{
-        console.log('Node clicked:', params);
-        if (params.nodes.length > 0) {{
-            var nodeId = params.nodes[0];
-            var markdownPath = BASE_MARKDOWN_PATH + '/' + encodeURI(nodeId);
-            console.log('Loading content for node:', nodeId, 'from', markdownPath);
-
-            fetch(markdownPath)
-                .then(response => {{
-                    if (!response.ok) {{
-                        throw new Error('HTTP error ' + response.status);
-                    }}
-                    return response.text();
-                }})
-                .then(content => {{
-                    document.getElementById('markdown-body').innerHTML = marked.parse(content);
-                    var modal = new bootstrap.Modal(document.getElementById('markdownModal'));
-                    modal.show();
-                }})
-                .catch(error => {{
-                    console.error('Lỗi khi load nội dung:', error);
-                    alert('Lỗi khi tải nội dung: ' + error.message);
-                }});
-        }}
-    }});
-}}
-
-function disablePhysicsAfterStabilization() {{
-    if (typeof network === 'undefined') {{
-        return;
-    }}
-    
-    network.once('stabilizationIterationsDone', function() {{
-        network.setOptions({{ physics: false }});
-        console.log('Graph stabilized and physics disabled');
-    }});
-}}
-
-// Đảm bảo marked.js đã load
-function waitForMarked(callback) {{
-    if (typeof marked !== 'undefined') {{
-        callback();
-    }} else {{
-        setTimeout(function() {{ waitForMarked(callback); }}, 100);
-    }}
-}}
-
-waitForMarked(function() {{
-    if (document.readyState === 'complete') {{
-        bindMarkdownClickHandler();
-        disablePhysicsAfterStabilization();
-    }} else {{
-        window.addEventListener('load', function() {{
-            bindMarkdownClickHandler();
-            disablePhysicsAfterStabilization();
-        }});
-    }}
-}});
-'''
-    with open('main.js', 'w', encoding='utf-8') as f:
-        f.write(main_js)
-
-    # Thêm tham chiếu đến main.js
-    html_content = html_content.replace('</body>', '    <script src="main.js"></script>\n</body>')
-
-    with open(output_path, 'w', encoding='utf-8') as f:
-        f.write(html_content)
-
-    print("--- COMPLETE ---")
-    print(f"You can now click nodes in {output_path} to view markdown content.")
+    print(f"\n--- XONG! ---")
+    print(f"Tìm thấy: {len(nodes)} nodes và {len(edges)} liên kết.")
+    print(f"Kết quả lưu tại: graph_data.json")
 
 if __name__ == "__main__":
-    build_interactive_graph(KB_PATH)
+    build_semantic_graph()
