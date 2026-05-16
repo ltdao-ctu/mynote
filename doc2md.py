@@ -16,7 +16,7 @@ KB_FOLDER = os.getenv("KB_PATH", "KB") # Mặc định là KB nếu không có t
 
 # Import hàm build_interactive_graph
 try:
-    from semantic_knowledge_graph import build_interactive_graph
+    from semantic_knowledge_graph import build_semantic_graph
 except ImportError:
     build_interactive_graph = None
     print(" [!] Cảnh báo: Không tìm thấy file semantic_knowledge_graph.py")
@@ -81,7 +81,7 @@ def run_workflow():
         if build_interactive_graph:
             print(">>> Thực thi build_interactive_graph...")
             # Build graph từ thư mục KB trong repo
-            build_interactive_graph(kb_dir, KB_FOLDER)
+            build_semantic_graph()
             
             # Đẩy lên GitHub (sử dụng INDEX_FILE từ .env)
             files_to_push = [INDEX_FILE] + new_md_files

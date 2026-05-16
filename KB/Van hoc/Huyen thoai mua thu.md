@@ -11,3 +11,5 @@ khắc họa sâu sắc những vết sẹo tâm lý không thể chữa lành v
 tìm kiếm sự giải thoát của con người trước định mệnh nghiệt ngã. Đây là
 một thiên truyện xúc động về sự trung thành, bản năng gốc rễ và những
 giá trị gia đình bền bỉ theo thời gian.
+
+#TieuThuyet

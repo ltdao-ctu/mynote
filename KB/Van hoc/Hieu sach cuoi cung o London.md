@@ -15,3 +15,5 @@ mặt với nỗi sợ hãi từ những đợt báo động không kích đầu
 khắc họa sự chuyển biến từ hy vọng cá nhân sang tinh thần **kiên cường
 tập thể** khi những người phụ nữ trẻ nỗ lực thích nghi với nghịch cảnh
 và tìm kiếm sự an ủi trong thế giới của những trang sách.
+
+#TieuThuyet

@@ -1,73 +1,74 @@
 {
     "metadata": {
-        "total_nodes": 42,
-        "total_edges": 47,
-        "threshold": 0.8
+        "total_nodes": 50,
+        "total_edges": 290,
+        "threshold_used": 0.8,
+        "category_bonus": 0.15
     },
     "nodes": [
         {
             "id": "AI/10 prompts Perplexity.md",
             "label": "10 prompts Perplexity.md",
             "group": "AI",
-            "value": 8,
+            "value": 18,
             "path": "AI/10 prompts Perplexity.md",
-            "title": "Click để xem nội dung: 10 prompts Perplexity.md"
+            "title": "Loại: AI | Kết nối: 16 tài liệu tương đồng"
         },
         {
             "id": "AI/Automate Faceless Content.md",
             "label": "Automate Faceless Content.md",
             "group": "AI",
-            "value": 5,
+            "value": 22,
             "path": "AI/Automate Faceless Content.md",
-            "title": "Click để xem nội dung: Automate Faceless Content.md"
+            "title": "Loại: AI | Kết nối: 20 tài liệu tương đồng"
         },
         {
             "id": "AI/Chien luoc dai duong xanh.md",
             "label": "Chien luoc dai duong xanh.md",
             "group": "AI",
-            "value": 5,
+            "value": 10,
             "path": "AI/Chien luoc dai duong xanh.md",
-            "title": "Click để xem nội dung: Chien luoc dai duong xanh.md"
+            "title": "Loại: AI | Kết nối: 8 tài liệu tương đồng"
         },
         {
             "id": "AI/Chonkie - Table Chunker.md",
             "label": "Chonkie - Table Chunker.md",
             "group": "AI",
-            "value": 5,
+            "value": 24,
             "path": "AI/Chonkie - Table Chunker.md",
-            "title": "Click để xem nội dung: Chonkie - Table Chunker.md"
+            "title": "Loại: AI | Kết nối: 22 tài liệu tương đồng"
         },
         {
             "id": "AI/Claude Video.md",
             "label": "Claude Video.md",
             "group": "AI",
-            "value": 5,
+            "value": 23,
             "path": "AI/Claude Video.md",
-            "title": "Click để xem nội dung: Claude Video.md"
+            "title": "Loại: AI | Kết nối: 21 tài liệu tương đồng"
         },
         {
             "id": "AI/CopilotKit.md",
             "label": "CopilotKit.md",
             "group": "AI",
-            "value": 5,
+            "value": 19,
             "path": "AI/CopilotKit.md",
-            "title": "Click để xem nội dung: CopilotKit.md"
+            "title": "Loại: AI | Kết nối: 17 tài liệu tương đồng"
         },
         {
             "id": "AI/DeepSeek ds2api.md",
             "label": "DeepSeek ds2api.md",
             "group": "AI",
-            "value": 5,
+            "value": 17,
             "path": "AI/DeepSeek ds2api.md",
-            "title": "Click để xem nội dung: DeepSeek ds2api.md"
+            "title": "Loại: AI | Kết nối: 15 tài liệu tương đồng"
         },
         {
             "id": "AI/Faster Qwen3 TTS.md",
             "label": "Faster Qwen3 TTS.md",
             "group": "AI",
-            "value": 5,
+            "value": 24,
             "path": "AI/Faster Qwen3 TTS.md",
-            "title": "Click để xem nội dung: Faster Qwen3 TTS.md"
+            "title": "Loại: AI | Kết nối: 22 tài liệu tương đồng"
         },
         {
             "id": "AI/Gen lich su va tuong lai cua nhan loai.md",
@@ -75,159 +76,199 @@
             "group": "AI",
             "value": 5,
             "path": "AI/Gen lich su va tuong lai cua nhan loai.md",
-            "title": "Click để xem nội dung: Gen lich su va tuong lai cua nhan loai.md"
+            "title": "Loại: AI | Kết nối: 3 tài liệu tương đồng"
         },
         {
             "id": "AI/GeoAI.md",
             "label": "GeoAI.md",
             "group": "AI",
-            "value": 5,
+            "value": 25,
             "path": "AI/GeoAI.md",
-            "title": "Click để xem nội dung: GeoAI.md"
+            "title": "Loại: AI | Kết nối: 23 tài liệu tương đồng"
         },
         {
             "id": "AI/IndexTTS Workflow Studio.md",
             "label": "IndexTTS Workflow Studio.md",
             "group": "AI",
-            "value": 5,
+            "value": 22,
             "path": "AI/IndexTTS Workflow Studio.md",
-            "title": "Click để xem nội dung: IndexTTS Workflow Studio.md"
+            "title": "Loại: AI | Kết nối: 20 tài liệu tương đồng"
         },
         {
             "id": "AI/InvokeAI.md",
             "label": "InvokeAI.md",
             "group": "AI",
-            "value": 5,
+            "value": 23,
             "path": "AI/InvokeAI.md",
-            "title": "Click để xem nội dung: InvokeAI.md"
+            "title": "Loại: AI | Kết nối: 21 tài liệu tương đồng"
         },
         {
             "id": "AI/Kanwas chatbot.md",
             "label": "Kanwas chatbot.md",
             "group": "AI",
-            "value": 5,
+            "value": 20,
             "path": "AI/Kanwas chatbot.md",
-            "title": "Click để xem nội dung: Kanwas chatbot.md"
+            "title": "Loại: AI | Kết nối: 18 tài liệu tương đồng"
         },
         {
             "id": "AI/Linh hon quang cao.md",
             "label": "Linh hon quang cao.md",
             "group": "AI",
-            "value": 5,
+            "value": 7,
             "path": "AI/Linh hon quang cao.md",
-            "title": "Click để xem nội dung: Linh hon quang cao.md"
+            "title": "Loại: AI | Kết nối: 5 tài liệu tương đồng"
         },
         {
             "id": "AI/MarkItDown.md",
             "label": "MarkItDown.md",
             "group": "AI",
-            "value": 9,
+            "value": 26,
             "path": "AI/MarkItDown.md",
-            "title": "Click để xem nội dung: MarkItDown.md"
+            "title": "Loại: AI | Kết nối: 24 tài liệu tương đồng"
         },
         {
             "id": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
             "label": "MinerU2.5-Pro-2604-1.2B pdf to md.md",
             "group": "AI",
-            "value": 5,
+            "value": 26,
             "path": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
-            "title": "Click để xem nội dung: MinerU2.5-Pro-2604-1.2B pdf to md.md"
+            "title": "Loại: AI | Kết nối: 24 tài liệu tương đồng"
         },
         {
             "id": "AI/model ZAYA1-8B.md",
             "label": "model ZAYA1-8B.md",
             "group": "AI",
-            "value": 5,
+            "value": 16,
             "path": "AI/model ZAYA1-8B.md",
-            "title": "Click để xem nội dung: model ZAYA1-8B.md"
+            "title": "Loại: AI | Kết nối: 14 tài liệu tương đồng"
         },
         {
             "id": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
             "label": "Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
             "group": "AI",
-            "value": 5,
+            "value": 20,
             "path": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
-            "title": "Click để xem nội dung: Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md"
+            "title": "Loại: AI | Kết nối: 18 tài liệu tương đồng"
         },
         {
             "id": "AI/obsidian-skills.md",
             "label": "obsidian-skills.md",
             "group": "AI",
-            "value": 5,
+            "value": 26,
             "path": "AI/obsidian-skills.md",
-            "title": "Click để xem nội dung: obsidian-skills.md"
+            "title": "Loại: AI | Kết nối: 24 tài liệu tương đồng"
+        },
+        {
+            "id": "AI/OmniVoice Studio The open source ElevenLabs alternative.md",
+            "label": "OmniVoice Studio The open source ElevenLabs alternative.md",
+            "group": "AI",
+            "value": 4,
+            "path": "AI/OmniVoice Studio The open source ElevenLabs alternative.md",
+            "title": "Loại: AI | Kết nối: 2 tài liệu tương đồng"
+        },
+        {
+            "id": "AI/Paperless-ngx document management self host.md",
+            "label": "Paperless-ngx document management self host.md",
+            "group": "AI",
+            "value": 22,
+            "path": "AI/Paperless-ngx document management self host.md",
+            "title": "Loại: AI | Kết nối: 20 tài liệu tương đồng"
         },
         {
             "id": "AI/Plumio KB.md",
             "label": "Plumio KB.md",
             "group": "AI",
-            "value": 5,
+            "value": 25,
             "path": "AI/Plumio KB.md",
-            "title": "Click để xem nội dung: Plumio KB.md"
+            "title": "Loại: AI | Kết nối: 23 tài liệu tương đồng"
         },
         {
             "id": "AI/Pocket TTS.md",
             "label": "Pocket TTS.md",
             "group": "AI",
-            "value": 5,
+            "value": 20,
             "path": "AI/Pocket TTS.md",
-            "title": "Click để xem nội dung: Pocket TTS.md"
+            "title": "Loại: AI | Kết nối: 18 tài liệu tương đồng"
         },
         {
             "id": "AI/Pomelli Catalog.md",
             "label": "Pomelli Catalog.md",
             "group": "AI",
-            "value": 5,
+            "value": 24,
             "path": "AI/Pomelli Catalog.md",
-            "title": "Click để xem nội dung: Pomelli Catalog.md"
+            "title": "Loại: AI | Kết nối: 22 tài liệu tương đồng"
         },
         {
             "id": "AI/ProxyWhirl web scraping.md",
             "label": "ProxyWhirl web scraping.md",
             "group": "AI",
-            "value": 5,
+            "value": 21,
             "path": "AI/ProxyWhirl web scraping.md",
-            "title": "Click để xem nội dung: ProxyWhirl web scraping.md"
+            "title": "Loại: AI | Kết nối: 19 tài liệu tương đồng"
         },
         {
             "id": "AI/Qwen-Lens-Studio.md",
             "label": "Qwen-Lens-Studio.md",
             "group": "AI",
-            "value": 5,
+            "value": 24,
             "path": "AI/Qwen-Lens-Studio.md",
-            "title": "Click để xem nội dung: Qwen-Lens-Studio.md"
+            "title": "Loại: AI | Kết nối: 22 tài liệu tương đồng"
         },
         {
             "id": "AI/Rapid-MLX.md",
             "label": "Rapid-MLX.md",
             "group": "AI",
-            "value": 5,
+            "value": 22,
             "path": "AI/Rapid-MLX.md",
-            "title": "Click để xem nội dung: Rapid-MLX.md"
+            "title": "Loại: AI | Kết nối: 20 tài liệu tương đồng"
         },
         {
             "id": "AI/Repository Understand-Anything.md",
             "label": "Repository Understand-Anything.md",
             "group": "AI",
-            "value": 5,
+            "value": 27,
             "path": "AI/Repository Understand-Anything.md",
-            "title": "Click để xem nội dung: Repository Understand-Anything.md"
+            "title": "Loại: AI | Kết nối: 25 tài liệu tương đồng"
+        },
+        {
+            "id": "AI/Scenema Audio Zero shot expressive voice cloning and speech generation.md",
+            "label": "Scenema Audio Zero shot expressive voice cloning and speech generation.md",
+            "group": "AI",
+            "value": 5,
+            "path": "AI/Scenema Audio Zero shot expressive voice cloning and speech generation.md",
+            "title": "Loại: AI | Kết nối: 3 tài liệu tương đồng"
         },
         {
             "id": "AI/SiYuan PKM.md",
             "label": "SiYuan PKM.md",
             "group": "AI",
-            "value": 5,
+            "value": 24,
             "path": "AI/SiYuan PKM.md",
-            "title": "Click để xem nội dung: SiYuan PKM.md"
+            "title": "Loại: AI | Kết nối: 22 tài liệu tương đồng"
+        },
+        {
+            "id": "Dev/Ollama Continue VSCode settings.md",
+            "label": "Ollama Continue VSCode settings.md",
+            "group": "Dev",
+            "value": 2,
+            "path": "Dev/Ollama Continue VSCode settings.md",
+            "title": "Loại: Dev | Kết nối: 0 tài liệu tương đồng"
+        },
+        {
+            "id": "Giao duc/Tu hoc.md",
+            "label": "Tu hoc.md",
+            "group": "Giao duc",
+            "value": 7,
+            "path": "Giao duc/Tu hoc.md",
+            "title": "Loại: Giao duc | Kết nối: 5 tài liệu tương đồng"
         },
         {
             "id": "Kinh te/Chien luoc dai duong xanh.md",
             "label": "Chien luoc dai duong xanh.md",
             "group": "Kinh te",
-            "value": 5,
+            "value": 4,
             "path": "Kinh te/Chien luoc dai duong xanh.md",
-            "title": "Click để xem nội dung: Chien luoc dai duong xanh.md"
+            "title": "Loại: Kinh te | Kết nối: 2 tài liệu tương đồng"
         },
         {
             "id": "Kinh te/Hieu ngheo thoat ngheo.md",
@@ -235,95 +276,119 @@
             "group": "Kinh te",
             "value": 5,
             "path": "Kinh te/Hieu ngheo thoat ngheo.md",
-            "title": "Click để xem nội dung: Hieu ngheo thoat ngheo.md"
+            "title": "Loại: Kinh te | Kết nối: 3 tài liệu tương đồng"
         },
         {
             "id": "Kinh te/Linh hon quang cao.md",
             "label": "Linh hon quang cao.md",
             "group": "Kinh te",
-            "value": 5,
+            "value": 4,
             "path": "Kinh te/Linh hon quang cao.md",
-            "title": "Click để xem nội dung: Linh hon quang cao.md"
+            "title": "Loại: Kinh te | Kết nối: 2 tài liệu tương đồng"
         },
         {
             "id": "Quan tri/Siêu đội ngũ.md",
             "label": "Siêu đội ngũ.md",
             "group": "Quan tri",
-            "value": 5,
+            "value": 3,
             "path": "Quan tri/Siêu đội ngũ.md",
-            "title": "Click để xem nội dung: Siêu đội ngũ.md"
+            "title": "Loại: Quan tri | Kết nối: 1 tài liệu tương đồng"
         },
         {
             "id": "Quan tri/Tu tot den vi dai.md",
             "label": "Tu tot den vi dai.md",
             "group": "Quan tri",
-            "value": 5,
+            "value": 4,
             "path": "Quan tri/Tu tot den vi dai.md",
-            "title": "Click để xem nội dung: Tu tot den vi dai.md"
+            "title": "Loại: Quan tri | Kết nối: 2 tài liệu tương đồng"
+        },
+        {
+            "id": "Sinh hoc/An gi cho bo nao.md",
+            "label": "An gi cho bo nao.md",
+            "group": "Sinh hoc",
+            "value": 4,
+            "path": "Sinh hoc/An gi cho bo nao.md",
+            "title": "Loại: Sinh hoc | Kết nối: 2 tài liệu tương đồng"
         },
         {
             "id": "Sinh hoc/Ban Mai Tre.md",
             "label": "Ban Mai Tre.md",
             "group": "Sinh hoc",
-            "value": 5,
+            "value": 6,
             "path": "Sinh hoc/Ban Mai Tre.md",
-            "title": "Click để xem nội dung: Ban Mai Tre.md"
+            "title": "Loại: Sinh hoc | Kết nối: 4 tài liệu tương đồng"
         },
         {
             "id": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
             "label": "Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
             "group": "Sinh hoc",
-            "value": 5,
+            "value": 8,
             "path": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
-            "title": "Click để xem nội dung: Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md"
+            "title": "Loại: Sinh hoc | Kết nối: 6 tài liệu tương đồng"
         },
         {
             "id": "Sinh hoc/Gen lich su va tuong lai cua nhan loai.md",
             "label": "Gen lich su va tuong lai cua nhan loai.md",
             "group": "Sinh hoc",
-            "value": 5,
+            "value": 3,
             "path": "Sinh hoc/Gen lich su va tuong lai cua nhan loai.md",
-            "title": "Click để xem nội dung: Gen lich su va tuong lai cua nhan loai.md"
+            "title": "Loại: Sinh hoc | Kết nối: 1 tài liệu tương đồng"
+        },
+        {
+            "id": "Tam ly/Cú hích Nudge.md",
+            "label": "Cú hích Nudge.md",
+            "group": "Tam ly",
+            "value": 6,
+            "path": "Tam ly/Cú hích Nudge.md",
+            "title": "Loại: Tam ly | Kết nối: 4 tài liệu tương đồng"
         },
         {
             "id": "Triet ly song/Bai giang cuoi cung.md",
             "label": "Bai giang cuoi cung.md",
             "group": "Triet ly song",
-            "value": 5,
+            "value": 6,
             "path": "Triet ly song/Bai giang cuoi cung.md",
-            "title": "Click để xem nội dung: Bai giang cuoi cung.md"
+            "title": "Loại: Triet ly song | Kết nối: 4 tài liệu tương đồng"
         },
         {
             "id": "Triet ly song/Be Useful Seven Tools for Life.md",
             "label": "Be Useful Seven Tools for Life.md",
             "group": "Triet ly song",
-            "value": 5,
+            "value": 3,
             "path": "Triet ly song/Be Useful Seven Tools for Life.md",
-            "title": "Click để xem nội dung: Be Useful Seven Tools for Life.md"
+            "title": "Loại: Triet ly song | Kết nối: 1 tài liệu tương đồng"
+        },
+        {
+            "id": "Triet ly song/Coc hay ca phe.md",
+            "label": "Coc hay ca phe.md",
+            "group": "Triet ly song",
+            "value": 2,
+            "path": "Triet ly song/Coc hay ca phe.md",
+            "title": "Loại: Triet ly song | Kết nối: 0 tài liệu tương đồng"
         },
         {
             "id": "Triet ly song/Tu hoc – Mot nhu cau thoi dai.md",
             "label": "Tu hoc – Mot nhu cau thoi dai.md",
             "group": "Triet ly song",
-            "value": 5,
+            "value": 8,
             "path": "Triet ly song/Tu hoc – Mot nhu cau thoi dai.md",
-            "title": "Click để xem nội dung: Tu hoc – Mot nhu cau thoi dai.md"
+            "title": "Loại: Triet ly song | Kết nối: 6 tài liệu tương đồng"
         },
         {
             "id": "Van hoc/Chiec thia bac.md",
             "label": "Chiec thia bac.md",
             "group": "Van hoc",
-            "value": 5,
+            "value": 3,
             "path": "Van hoc/Chiec thia bac.md",
-            "title": "Click để xem nội dung: Chiec thia bac.md"
+            "title": "Loại: Van hoc | Kết nối: 1 tài liệu tương đồng"
         },
         {
             "id": "Van hoc/Hieu sach cuoi cung o London.md",
             "label": "Hieu sach cuoi cung o London.md",
             "group": "Van hoc",
-            "value": 5,
+            "value": 3,
             "path": "Van hoc/Hieu sach cuoi cung o London.md",
-            "title": "Click để xem nội dung: Hieu sach cuoi cung o London.md"
+            "title": "Loại: Van hoc | Kết nối: 1 tài liệu tương đồng"
         },
         {
             "id": "Van hoc/Huyen thoai mua thu.md",
@@ -331,21 +396,21 @@
             "group": "Van hoc",
             "value": 5,
             "path": "Van hoc/Huyen thoai mua thu.md",
-            "title": "Click để xem nội dung: Huyen thoai mua thu.md"
+            "title": "Loại: Van hoc | Kết nối: 3 tài liệu tương đồng"
         },
         {
             "id": "Van hoc/Tinh yeu xanh tham.md",
             "label": "Tinh yeu xanh tham.md",
             "group": "Van hoc",
-            "value": 5,
+            "value": 3,
             "path": "Van hoc/Tinh yeu xanh tham.md",
-            "title": "Click để xem nội dung: Tinh yeu xanh tham.md"
+            "title": "Loại: Van hoc | Kết nối: 1 tài liệu tương đồng"
         }
     ],
     "edges": [
         {
-            "from": "AI/Automate Faceless Content.md",
-            "to": "AI/IndexTTS Workflow Studio.md",
+            "from": "AI/10 prompts Perplexity.md",
+            "to": "AI/Chonkie - Table Chunker.md",
             "weight": 0.807,
             "label": "80%",
             "color": {
@@ -358,12 +423,12 @@
             }
         },
         {
-            "from": "AI/CopilotKit.md",
-            "to": "AI/DeepSeek ds2api.md",
-            "weight": 0.872,
-            "label": "87%",
+            "from": "AI/10 prompts Perplexity.md",
+            "to": "AI/CopilotKit.md",
+            "weight": 0.801,
+            "label": "80%",
             "color": {
-                "opacity": 0.87,
+                "opacity": 0.8,
                 "color": "#848484"
             },
             "font": {
@@ -372,12 +437,12 @@
             }
         },
         {
-            "from": "AI/CopilotKit.md",
+            "from": "AI/10 prompts Perplexity.md",
             "to": "AI/Faster Qwen3 TTS.md",
-            "weight": 0.821,
-            "label": "82%",
+            "weight": 0.801,
+            "label": "80%",
             "color": {
-                "opacity": 0.82,
+                "opacity": 0.8,
                 "color": "#848484"
             },
             "font": {
@@ -386,162 +451,22 @@
             }
         },
         {
-            "from": "AI/CopilotKit.md",
+            "from": "AI/10 prompts Perplexity.md",
+            "to": "AI/GeoAI.md",
+            "weight": 0.804,
+            "label": "80%",
+            "color": {
+                "opacity": 0.8,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/10 prompts Perplexity.md",
             "to": "AI/IndexTTS Workflow Studio.md",
-            "weight": 0.85,
-            "label": "84%",
-            "color": {
-                "opacity": 0.85,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/CopilotKit.md",
-            "to": "AI/InvokeAI.md",
-            "weight": 0.853,
-            "label": "85%",
-            "color": {
-                "opacity": 0.85,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/CopilotKit.md",
-            "to": "AI/Kanwas chatbot.md",
-            "weight": 0.848,
-            "label": "84%",
-            "color": {
-                "opacity": 0.85,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/CopilotKit.md",
-            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
-            "weight": 0.846,
-            "label": "84%",
-            "color": {
-                "opacity": 0.85,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/CopilotKit.md",
-            "to": "AI/Plumio KB.md",
-            "weight": 0.805,
-            "label": "80%",
-            "color": {
-                "opacity": 0.81,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/CopilotKit.md",
-            "to": "AI/ProxyWhirl web scraping.md",
-            "weight": 0.858,
-            "label": "85%",
-            "color": {
-                "opacity": 0.86,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/CopilotKit.md",
-            "to": "AI/Rapid-MLX.md",
-            "weight": 0.861,
-            "label": "86%",
-            "color": {
-                "opacity": 0.86,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/DeepSeek ds2api.md",
-            "to": "AI/InvokeAI.md",
-            "weight": 0.807,
-            "label": "80%",
-            "color": {
-                "opacity": 0.81,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/DeepSeek ds2api.md",
-            "to": "AI/Kanwas chatbot.md",
-            "weight": 0.831,
-            "label": "83%",
-            "color": {
-                "opacity": 0.83,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/DeepSeek ds2api.md",
-            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
-            "weight": 0.844,
-            "label": "84%",
-            "color": {
-                "opacity": 0.84,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/DeepSeek ds2api.md",
-            "to": "AI/Plumio KB.md",
-            "weight": 0.836,
-            "label": "83%",
-            "color": {
-                "opacity": 0.84,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/DeepSeek ds2api.md",
-            "to": "AI/Pomelli Catalog.md",
             "weight": 0.822,
             "label": "82%",
             "color": {
@@ -554,93 +479,9 @@
             }
         },
         {
-            "from": "AI/DeepSeek ds2api.md",
-            "to": "AI/ProxyWhirl web scraping.md",
-            "weight": 0.835,
-            "label": "83%",
-            "color": {
-                "opacity": 0.84,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/DeepSeek ds2api.md",
-            "to": "AI/Rapid-MLX.md",
-            "weight": 0.886,
-            "label": "88%",
-            "color": {
-                "opacity": 0.89,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/DeepSeek ds2api.md",
-            "to": "AI/SiYuan PKM.md",
-            "weight": 0.852,
-            "label": "85%",
-            "color": {
-                "opacity": 0.85,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/Faster Qwen3 TTS.md",
-            "to": "AI/IndexTTS Workflow Studio.md",
-            "weight": 0.835,
-            "label": "83%",
-            "color": {
-                "opacity": 0.83,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/GeoAI.md",
-            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
-            "weight": 0.835,
-            "label": "83%",
-            "color": {
-                "opacity": 0.83,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/GeoAI.md",
-            "to": "AI/Repository Understand-Anything.md",
-            "weight": 0.86,
-            "label": "85%",
-            "color": {
-                "opacity": 0.86,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/IndexTTS Workflow Studio.md",
+            "from": "AI/10 prompts Perplexity.md",
             "to": "AI/InvokeAI.md",
-            "weight": 0.832,
+            "weight": 0.834,
             "label": "83%",
             "color": {
                 "opacity": 0.83,
@@ -652,9 +493,9 @@
             }
         },
         {
-            "from": "AI/IndexTTS Workflow Studio.md",
+            "from": "AI/10 prompts Perplexity.md",
             "to": "AI/Kanwas chatbot.md",
-            "weight": 0.84,
+            "weight": 0.842,
             "label": "84%",
             "color": {
                 "opacity": 0.84,
@@ -666,8 +507,22 @@
             }
         },
         {
-            "from": "AI/IndexTTS Workflow Studio.md",
-            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "from": "AI/10 prompts Perplexity.md",
+            "to": "AI/MarkItDown.md",
+            "weight": 0.809,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/10 prompts Perplexity.md",
+            "to": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
             "weight": 0.824,
             "label": "82%",
             "color": {
@@ -680,105 +535,7 @@
             }
         },
         {
-            "from": "AI/InvokeAI.md",
-            "to": "AI/Kanwas chatbot.md",
-            "weight": 0.835,
-            "label": "83%",
-            "color": {
-                "opacity": 0.84,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/InvokeAI.md",
-            "to": "AI/ProxyWhirl web scraping.md",
-            "weight": 0.827,
-            "label": "82%",
-            "color": {
-                "opacity": 0.83,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/Kanwas chatbot.md",
-            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
-            "weight": 0.823,
-            "label": "82%",
-            "color": {
-                "opacity": 0.82,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/Kanwas chatbot.md",
-            "to": "AI/obsidian-skills.md",
-            "weight": 0.805,
-            "label": "80%",
-            "color": {
-                "opacity": 0.81,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/Kanwas chatbot.md",
-            "to": "AI/Pomelli Catalog.md",
-            "weight": 0.805,
-            "label": "80%",
-            "color": {
-                "opacity": 0.81,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/Kanwas chatbot.md",
-            "to": "AI/ProxyWhirl web scraping.md",
-            "weight": 0.821,
-            "label": "82%",
-            "color": {
-                "opacity": 0.82,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/Kanwas chatbot.md",
-            "to": "AI/Rapid-MLX.md",
-            "weight": 0.8,
-            "label": "80%",
-            "color": {
-                "opacity": 0.8,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/MarkItDown.md",
+            "from": "AI/10 prompts Perplexity.md",
             "to": "AI/obsidian-skills.md",
             "weight": 0.811,
             "label": "81%",
@@ -792,107 +549,9 @@
             }
         },
         {
-            "from": "AI/MarkItDown.md",
-            "to": "AI/Repository Understand-Anything.md",
-            "weight": 0.82,
-            "label": "81%",
-            "color": {
-                "opacity": 0.82,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
-            "to": "AI/Rapid-MLX.md",
-            "weight": 0.871,
-            "label": "87%",
-            "color": {
-                "opacity": 0.87,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/obsidian-skills.md",
-            "to": "AI/Repository Understand-Anything.md",
-            "weight": 0.808,
-            "label": "80%",
-            "color": {
-                "opacity": 0.81,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/Plumio KB.md",
-            "to": "AI/ProxyWhirl web scraping.md",
-            "weight": 0.808,
-            "label": "80%",
-            "color": {
-                "opacity": 0.81,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/Plumio KB.md",
-            "to": "AI/Rapid-MLX.md",
-            "weight": 0.808,
-            "label": "80%",
-            "color": {
-                "opacity": 0.81,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/Plumio KB.md",
-            "to": "AI/SiYuan PKM.md",
-            "weight": 0.818,
-            "label": "81%",
-            "color": {
-                "opacity": 0.82,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/ProxyWhirl web scraping.md",
-            "to": "AI/Rapid-MLX.md",
-            "weight": 0.804,
-            "label": "80%",
-            "color": {
-                "opacity": 0.8,
-                "color": "#848484"
-            },
-            "font": {
-                "size": 10,
-                "align": "middle"
-            }
-        },
-        {
-            "from": "AI/ProxyWhirl web scraping.md",
-            "to": "AI/SiYuan PKM.md",
-            "weight": 0.829,
+            "from": "AI/10 prompts Perplexity.md",
+            "to": "AI/Paperless-ngx document management self host.md",
+            "weight": 0.827,
             "label": "82%",
             "color": {
                 "opacity": 0.83,
@@ -904,12 +563,12 @@
             }
         },
         {
-            "from": "AI/Rapid-MLX.md",
-            "to": "AI/SiYuan PKM.md",
-            "weight": 0.821,
-            "label": "82%",
+            "from": "AI/10 prompts Perplexity.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.814,
+            "label": "81%",
             "color": {
-                "opacity": 0.82,
+                "opacity": 0.81,
                 "color": "#848484"
             },
             "font": {
@@ -918,8 +577,358 @@
             }
         },
         {
-            "from": "Kinh te/Hieu ngheo thoat ngheo.md",
-            "to": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
+            "from": "AI/10 prompts Perplexity.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.834,
+            "label": "83%",
+            "color": {
+                "opacity": 0.83,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/10 prompts Perplexity.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.861,
+            "label": "86%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/10 prompts Perplexity.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.846,
+            "label": "84%",
+            "color": {
+                "opacity": 0.85,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/10 prompts Perplexity.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.836,
+            "label": "83%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/Chonkie - Table Chunker.md",
+            "weight": 0.807,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/Claude Video.md",
+            "weight": 0.93,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/CopilotKit.md",
+            "weight": 0.926,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/DeepSeek ds2api.md",
+            "weight": 0.917,
+            "label": "91%",
+            "color": {
+                "opacity": 0.92,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/Faster Qwen3 TTS.md",
+            "weight": 0.849,
+            "label": "84%",
+            "color": {
+                "opacity": 0.85,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/GeoAI.md",
+            "weight": 0.868,
+            "label": "86%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/IndexTTS Workflow Studio.md",
+            "weight": 0.973,
+            "label": "97%",
+            "color": {
+                "opacity": 0.97,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/InvokeAI.md",
+            "weight": 0.933,
+            "label": "93%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/Kanwas chatbot.md",
+            "weight": 0.943,
+            "label": "94%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/MarkItDown.md",
+            "weight": 0.846,
+            "label": "84%",
+            "color": {
+                "opacity": 0.85,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "weight": 0.806,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "weight": 0.953,
+            "label": "95%",
+            "color": {
+                "opacity": 0.95,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.873,
+            "label": "87%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.857,
+            "label": "85%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.911,
+            "label": "91%",
+            "color": {
+                "opacity": 0.91,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.899,
+            "label": "89%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.857,
+            "label": "85%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.865,
+            "label": "86%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.904,
+            "label": "90%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Automate Faceless Content.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.85,
+            "label": "84%",
+            "color": {
+                "opacity": 0.85,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chien luoc dai duong xanh.md",
+            "to": "AI/GeoAI.md",
+            "weight": 0.802,
+            "label": "80%",
+            "color": {
+                "opacity": 0.8,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chien luoc dai duong xanh.md",
+            "to": "AI/IndexTTS Workflow Studio.md",
             "weight": 0.817,
             "label": "81%",
             "color": {
@@ -932,9 +941,289 @@
             }
         },
         {
-            "from": "Quan tri/Siêu đội ngũ.md",
-            "to": "Quan tri/Tu tot den vi dai.md",
-            "weight": 0.825,
+            "from": "AI/Chien luoc dai duong xanh.md",
+            "to": "AI/Linh hon quang cao.md",
+            "weight": 0.966,
+            "label": "96%",
+            "color": {
+                "opacity": 0.97,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chien luoc dai duong xanh.md",
+            "to": "AI/MarkItDown.md",
+            "weight": 0.816,
+            "label": "81%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chien luoc dai duong xanh.md",
+            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "weight": 0.808,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chien luoc dai duong xanh.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.813,
+            "label": "81%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chien luoc dai duong xanh.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.892,
+            "label": "89%",
+            "color": {
+                "opacity": 0.89,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chien luoc dai duong xanh.md",
+            "to": "Kinh te/Linh hon quang cao.md",
+            "weight": 0.801,
+            "label": "80%",
+            "color": {
+                "opacity": 0.8,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/Claude Video.md",
+            "weight": 0.823,
+            "label": "82%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/CopilotKit.md",
+            "weight": 0.84,
+            "label": "84%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/DeepSeek ds2api.md",
+            "weight": 0.908,
+            "label": "90%",
+            "color": {
+                "opacity": 0.91,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/Faster Qwen3 TTS.md",
+            "weight": 0.807,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/GeoAI.md",
+            "weight": 0.865,
+            "label": "86%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/IndexTTS Workflow Studio.md",
+            "weight": 0.881,
+            "label": "88%",
+            "color": {
+                "opacity": 0.88,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/InvokeAI.md",
+            "weight": 0.842,
+            "label": "84%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/Kanwas chatbot.md",
+            "weight": 0.92,
+            "label": "92%",
+            "color": {
+                "opacity": 0.92,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/MarkItDown.md",
+            "weight": 0.942,
+            "label": "94%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "weight": 0.899,
+            "label": "89%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "weight": 0.892,
+            "label": "89%",
+            "color": {
+                "opacity": 0.89,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.917,
+            "label": "91%",
+            "color": {
+                "opacity": 0.92,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/Paperless-ngx document management self host.md",
+            "weight": 0.851,
+            "label": "85%",
+            "color": {
+                "opacity": 0.85,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.925,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/Pocket TTS.md",
+            "weight": 0.829,
             "label": "82%",
             "color": {
                 "opacity": 0.83,
@@ -946,8 +1235,288 @@
             }
         },
         {
-            "from": "Sinh hoc/Ban Mai Tre.md",
-            "to": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.861,
+            "label": "86%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.883,
+            "label": "88%",
+            "color": {
+                "opacity": 0.88,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.894,
+            "label": "89%",
+            "color": {
+                "opacity": 0.89,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.921,
+            "label": "92%",
+            "color": {
+                "opacity": 0.92,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Chonkie - Table Chunker.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.934,
+            "label": "93%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/CopilotKit.md",
+            "weight": 0.878,
+            "label": "87%",
+            "color": {
+                "opacity": 0.88,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/DeepSeek ds2api.md",
+            "weight": 0.936,
+            "label": "93%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/Faster Qwen3 TTS.md",
+            "weight": 0.924,
+            "label": "92%",
+            "color": {
+                "opacity": 0.92,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/GeoAI.md",
+            "weight": 0.872,
+            "label": "87%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/IndexTTS Workflow Studio.md",
+            "weight": 0.959,
+            "label": "95%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/InvokeAI.md",
+            "weight": 0.896,
+            "label": "89%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/Kanwas chatbot.md",
+            "weight": 0.931,
+            "label": "93%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/MarkItDown.md",
+            "weight": 0.89,
+            "label": "88%",
+            "color": {
+                "opacity": 0.89,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "weight": 0.862,
+            "label": "86%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "weight": 0.9,
+            "label": "89%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.879,
+            "label": "87%",
+            "color": {
+                "opacity": 0.88,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/Paperless-ngx document management self host.md",
+            "weight": 0.812,
+            "label": "81%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.855,
+            "label": "85%",
+            "color": {
+                "opacity": 0.85,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.964,
+            "label": "96%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.886,
+            "label": "88%",
+            "color": {
+                "opacity": 0.89,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/Qwen-Lens-Studio.md",
             "weight": 0.869,
             "label": "86%",
             "color": {
@@ -960,9 +1529,737 @@
             }
         },
         {
-            "from": "Sinh hoc/Ban Mai Tre.md",
-            "to": "Triet ly song/Bai giang cuoi cung.md",
-            "weight": 0.804,
+            "from": "AI/Claude Video.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.887,
+            "label": "88%",
+            "color": {
+                "opacity": 0.89,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.879,
+            "label": "87%",
+            "color": {
+                "opacity": 0.88,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Claude Video.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.925,
+            "label": "92%",
+            "color": {
+                "opacity": 0.92,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/Faster Qwen3 TTS.md",
+            "weight": 0.979,
+            "label": "97%",
+            "color": {
+                "opacity": 0.98,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/GeoAI.md",
+            "weight": 0.951,
+            "label": "95%",
+            "color": {
+                "opacity": 0.95,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/MarkItDown.md",
+            "weight": 0.89,
+            "label": "89%",
+            "color": {
+                "opacity": 0.89,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "weight": 0.913,
+            "label": "91%",
+            "color": {
+                "opacity": 0.91,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/model ZAYA1-8B.md",
+            "weight": 0.877,
+            "label": "87%",
+            "color": {
+                "opacity": 0.88,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.914,
+            "label": "91%",
+            "color": {
+                "opacity": 0.91,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/Paperless-ngx document management self host.md",
+            "weight": 0.868,
+            "label": "86%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.974,
+            "label": "97%",
+            "color": {
+                "opacity": 0.97,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/Pocket TTS.md",
+            "weight": 0.83,
+            "label": "82%",
+            "color": {
+                "opacity": 0.83,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.964,
+            "label": "96%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.922,
+            "label": "92%",
+            "color": {
+                "opacity": 0.92,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.955,
+            "label": "95%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/CopilotKit.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.976,
+            "label": "97%",
+            "color": {
+                "opacity": 0.98,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/Faster Qwen3 TTS.md",
+            "weight": 0.939,
+            "label": "93%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/GeoAI.md",
+            "weight": 0.923,
+            "label": "92%",
+            "color": {
+                "opacity": 0.92,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/IndexTTS Workflow Studio.md",
+            "weight": 0.952,
+            "label": "95%",
+            "color": {
+                "opacity": 0.95,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/InvokeAI.md",
+            "weight": 0.99,
+            "label": "98%",
+            "color": {
+                "opacity": 0.99,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/MarkItDown.md",
+            "weight": 0.945,
+            "label": "94%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "weight": 0.919,
+            "label": "91%",
+            "color": {
+                "opacity": 0.92,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.961,
+            "label": "96%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/Paperless-ngx document management self host.md",
+            "weight": 0.905,
+            "label": "90%",
+            "color": {
+                "opacity": 0.91,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/Pocket TTS.md",
+            "weight": 0.841,
+            "label": "84%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.989,
+            "label": "98%",
+            "color": {
+                "opacity": 0.99,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.925,
+            "label": "92%",
+            "color": {
+                "opacity": 0.92,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/DeepSeek ds2api.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.947,
+            "label": "94%",
+            "color": {
+                "opacity": 0.95,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/GeoAI.md",
+            "weight": 0.923,
+            "label": "92%",
+            "color": {
+                "opacity": 0.92,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/InvokeAI.md",
+            "weight": 0.945,
+            "label": "94%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/Kanwas chatbot.md",
+            "weight": 0.945,
+            "label": "94%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/MarkItDown.md",
+            "weight": 0.865,
+            "label": "86%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "weight": 0.879,
+            "label": "87%",
+            "color": {
+                "opacity": 0.88,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/model ZAYA1-8B.md",
+            "weight": 0.889,
+            "label": "88%",
+            "color": {
+                "opacity": 0.89,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "weight": 0.96,
+            "label": "95%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.86,
+            "label": "85%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.843,
+            "label": "84%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/Pocket TTS.md",
+            "weight": 0.858,
+            "label": "85%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.901,
+            "label": "90%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.913,
+            "label": "91%",
+            "color": {
+                "opacity": 0.91,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.88,
+            "label": "87%",
+            "color": {
+                "opacity": 0.88,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.97,
+            "label": "96%",
+            "color": {
+                "opacity": 0.97,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.888,
+            "label": "88%",
+            "color": {
+                "opacity": 0.89,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Faster Qwen3 TTS.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.884,
+            "label": "88%",
+            "color": {
+                "opacity": 0.88,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Gen lich su va tuong lai cua nhan loai.md",
+            "to": "AI/Linh hon quang cao.md",
+            "weight": 0.809,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Gen lich su va tuong lai cua nhan loai.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.836,
+            "label": "83%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Gen lich su va tuong lai cua nhan loai.md",
+            "to": "Sinh hoc/Gen lich su va tuong lai cua nhan loai.md",
+            "weight": 0.99,
+            "label": "98%",
+            "color": {
+                "opacity": 0.99,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/GeoAI.md",
+            "to": "AI/IndexTTS Workflow Studio.md",
+            "weight": 0.939,
+            "label": "93%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/GeoAI.md",
+            "to": "AI/InvokeAI.md",
+            "weight": 0.923,
+            "label": "92%",
+            "color": {
+                "opacity": 0.92,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/GeoAI.md",
+            "to": "AI/Kanwas chatbot.md",
+            "weight": 0.919,
+            "label": "91%",
+            "color": {
+                "opacity": 0.92,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/GeoAI.md",
+            "to": "AI/MarkItDown.md",
+            "weight": 0.966,
+            "label": "96%",
+            "color": {
+                "opacity": 0.97,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/GeoAI.md",
+            "to": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "weight": 0.882,
+            "label": "88%",
+            "color": {
+                "opacity": 0.88,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/GeoAI.md",
+            "to": "AI/model ZAYA1-8B.md",
+            "weight": 0.801,
             "label": "80%",
             "color": {
                 "opacity": 0.8,
@@ -974,9 +2271,2067 @@
             }
         },
         {
-            "from": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
+            "from": "AI/GeoAI.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.926,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/GeoAI.md",
+            "to": "AI/Paperless-ngx document management self host.md",
+            "weight": 0.9,
+            "label": "90%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/GeoAI.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.9,
+            "label": "90%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/GeoAI.md",
+            "to": "AI/Pocket TTS.md",
+            "weight": 0.866,
+            "label": "86%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/GeoAI.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.866,
+            "label": "86%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/GeoAI.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.928,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/GeoAI.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.873,
+            "label": "87%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/GeoAI.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.939,
+            "label": "93%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/GeoAI.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.903,
+            "label": "90%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/IndexTTS Workflow Studio.md",
+            "to": "AI/MarkItDown.md",
+            "weight": 0.891,
+            "label": "89%",
+            "color": {
+                "opacity": 0.89,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/IndexTTS Workflow Studio.md",
+            "to": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "weight": 0.882,
+            "label": "88%",
+            "color": {
+                "opacity": 0.88,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/IndexTTS Workflow Studio.md",
+            "to": "AI/model ZAYA1-8B.md",
+            "weight": 0.869,
+            "label": "86%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/IndexTTS Workflow Studio.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.925,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/IndexTTS Workflow Studio.md",
+            "to": "AI/Paperless-ngx document management self host.md",
+            "weight": 0.813,
+            "label": "81%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/IndexTTS Workflow Studio.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.902,
+            "label": "90%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/IndexTTS Workflow Studio.md",
+            "to": "AI/Pocket TTS.md",
+            "weight": 0.802,
+            "label": "80%",
+            "color": {
+                "opacity": 0.8,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/IndexTTS Workflow Studio.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.946,
+            "label": "94%",
+            "color": {
+                "opacity": 0.95,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/IndexTTS Workflow Studio.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.962,
+            "label": "96%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/IndexTTS Workflow Studio.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.881,
+            "label": "88%",
+            "color": {
+                "opacity": 0.88,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/IndexTTS Workflow Studio.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.938,
+            "label": "93%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/IndexTTS Workflow Studio.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.953,
+            "label": "95%",
+            "color": {
+                "opacity": 0.95,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/IndexTTS Workflow Studio.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.943,
+            "label": "94%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/InvokeAI.md",
+            "to": "AI/MarkItDown.md",
+            "weight": 0.864,
+            "label": "86%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/InvokeAI.md",
+            "to": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "weight": 0.914,
+            "label": "91%",
+            "color": {
+                "opacity": 0.91,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/InvokeAI.md",
+            "to": "AI/model ZAYA1-8B.md",
+            "weight": 0.877,
+            "label": "87%",
+            "color": {
+                "opacity": 0.88,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/InvokeAI.md",
+            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "weight": 0.96,
+            "label": "96%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/InvokeAI.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.9,
+            "label": "90%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/InvokeAI.md",
+            "to": "AI/Paperless-ngx document management self host.md",
+            "weight": 0.84,
+            "label": "83%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/InvokeAI.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.919,
+            "label": "91%",
+            "color": {
+                "opacity": 0.92,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/InvokeAI.md",
+            "to": "AI/Pocket TTS.md",
+            "weight": 0.81,
+            "label": "81%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/InvokeAI.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.937,
+            "label": "93%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/InvokeAI.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.93,
+            "label": "93%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/InvokeAI.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.93,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/InvokeAI.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.915,
+            "label": "91%",
+            "color": {
+                "opacity": 0.91,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/InvokeAI.md",
+            "to": "AI/Scenema Audio Zero shot expressive voice cloning and speech generation.md",
+            "weight": 0.814,
+            "label": "81%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/InvokeAI.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.953,
+            "label": "95%",
+            "color": {
+                "opacity": 0.95,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/MarkItDown.md",
+            "weight": 0.923,
+            "label": "92%",
+            "color": {
+                "opacity": 0.92,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "weight": 0.908,
+            "label": "90%",
+            "color": {
+                "opacity": 0.91,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/model ZAYA1-8B.md",
+            "weight": 0.841,
+            "label": "84%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.975,
+            "label": "97%",
+            "color": {
+                "opacity": 0.98,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/Paperless-ngx document management self host.md",
+            "weight": 0.867,
+            "label": "86%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.926,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/Pocket TTS.md",
+            "weight": 0.807,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.98,
+            "label": "98%",
+            "color": {
+                "opacity": 0.98,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.866,
+            "label": "86%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.956,
+            "label": "95%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.961,
+            "label": "96%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Kanwas chatbot.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.953,
+            "label": "95%",
+            "color": {
+                "opacity": 0.95,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Linh hon quang cao.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.802,
+            "label": "80%",
+            "color": {
+                "opacity": 0.8,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Linh hon quang cao.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.894,
+            "label": "89%",
+            "color": {
+                "opacity": 0.89,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Linh hon quang cao.md",
+            "to": "Kinh te/Chien luoc dai duong xanh.md",
+            "weight": 0.816,
+            "label": "81%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MarkItDown.md",
+            "to": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "weight": 0.927,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MarkItDown.md",
+            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "weight": 0.96,
+            "label": "95%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MarkItDown.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.981,
+            "label": "98%",
+            "color": {
+                "opacity": 0.98,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MarkItDown.md",
+            "to": "AI/Paperless-ngx document management self host.md",
+            "weight": 0.881,
+            "label": "88%",
+            "color": {
+                "opacity": 0.88,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MarkItDown.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.952,
+            "label": "95%",
+            "color": {
+                "opacity": 0.95,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MarkItDown.md",
+            "to": "AI/Pocket TTS.md",
+            "weight": 0.84,
+            "label": "83%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MarkItDown.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.943,
+            "label": "94%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MarkItDown.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.914,
+            "label": "91%",
+            "color": {
+                "opacity": 0.91,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MarkItDown.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.836,
+            "label": "83%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MarkItDown.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.946,
+            "label": "94%",
+            "color": {
+                "opacity": 0.95,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MarkItDown.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.987,
+            "label": "98%",
+            "color": {
+                "opacity": 0.99,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MarkItDown.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.929,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "to": "AI/model ZAYA1-8B.md",
+            "weight": 0.877,
+            "label": "87%",
+            "color": {
+                "opacity": 0.88,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "weight": 0.9,
+            "label": "90%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.856,
+            "label": "85%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "to": "AI/Paperless-ngx document management self host.md",
+            "weight": 0.874,
+            "label": "87%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.951,
+            "label": "95%",
+            "color": {
+                "opacity": 0.95,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "to": "AI/Pocket TTS.md",
+            "weight": 0.845,
+            "label": "84%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.918,
+            "label": "91%",
+            "color": {
+                "opacity": 0.92,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.948,
+            "label": "94%",
+            "color": {
+                "opacity": 0.95,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.856,
+            "label": "85%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.961,
+            "label": "96%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.874,
+            "label": "87%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/MinerU2.5-Pro-2604-1.2B pdf to md.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.932,
+            "label": "93%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/model ZAYA1-8B.md",
+            "to": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "weight": 0.818,
+            "label": "81%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/model ZAYA1-8B.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.805,
+            "label": "80%",
+            "color": {
+                "opacity": 0.8,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/model ZAYA1-8B.md",
+            "to": "AI/Pocket TTS.md",
+            "weight": 0.8,
+            "label": "80%",
+            "color": {
+                "opacity": 0.8,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/model ZAYA1-8B.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.868,
+            "label": "86%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/model ZAYA1-8B.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.833,
+            "label": "83%",
+            "color": {
+                "opacity": 0.83,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/model ZAYA1-8B.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.857,
+            "label": "85%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/model ZAYA1-8B.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.835,
+            "label": "83%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "to": "AI/obsidian-skills.md",
+            "weight": 0.964,
+            "label": "96%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "to": "AI/Paperless-ngx document management self host.md",
+            "weight": 0.85,
+            "label": "85%",
+            "color": {
+                "opacity": 0.85,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.928,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "to": "AI/Pocket TTS.md",
+            "weight": 0.808,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.951,
+            "label": "95%",
+            "color": {
+                "opacity": 0.95,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.973,
+            "label": "97%",
+            "color": {
+                "opacity": 0.97,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.898,
+            "label": "89%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.971,
+            "label": "97%",
+            "color": {
+                "opacity": 0.97,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Nguồn mở Thoth – Trợ lý AI cá nhân chạy hoàn toàn local.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.973,
+            "label": "97%",
+            "color": {
+                "opacity": 0.97,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/obsidian-skills.md",
+            "to": "AI/Paperless-ngx document management self host.md",
+            "weight": 0.87,
+            "label": "87%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/obsidian-skills.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.942,
+            "label": "94%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/obsidian-skills.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.941,
+            "label": "94%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/obsidian-skills.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.93,
+            "label": "93%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/obsidian-skills.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.841,
+            "label": "84%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/obsidian-skills.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.912,
+            "label": "91%",
+            "color": {
+                "opacity": 0.91,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/obsidian-skills.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.975,
+            "label": "97%",
+            "color": {
+                "opacity": 0.98,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/obsidian-skills.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.926,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/OmniVoice Studio The open source ElevenLabs alternative.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.833,
+            "label": "83%",
+            "color": {
+                "opacity": 0.83,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/OmniVoice Studio The open source ElevenLabs alternative.md",
+            "to": "AI/Scenema Audio Zero shot expressive voice cloning and speech generation.md",
+            "weight": 0.873,
+            "label": "87%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Paperless-ngx document management self host.md",
+            "to": "AI/Plumio KB.md",
+            "weight": 0.891,
+            "label": "89%",
+            "color": {
+                "opacity": 0.89,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Paperless-ngx document management self host.md",
+            "to": "AI/Pocket TTS.md",
+            "weight": 0.928,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Paperless-ngx document management self host.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.845,
+            "label": "84%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Paperless-ngx document management self host.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.889,
+            "label": "88%",
+            "color": {
+                "opacity": 0.89,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Paperless-ngx document management self host.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.868,
+            "label": "86%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Paperless-ngx document management self host.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.882,
+            "label": "88%",
+            "color": {
+                "opacity": 0.88,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Paperless-ngx document management self host.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.93,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Plumio KB.md",
+            "to": "AI/Pocket TTS.md",
+            "weight": 0.816,
+            "label": "81%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Plumio KB.md",
+            "to": "AI/Pomelli Catalog.md",
+            "weight": 0.943,
+            "label": "94%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Plumio KB.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.978,
+            "label": "97%",
+            "color": {
+                "opacity": 0.98,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Plumio KB.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.896,
+            "label": "89%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Plumio KB.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.968,
+            "label": "96%",
+            "color": {
+                "opacity": 0.97,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Plumio KB.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.931,
+            "label": "93%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Plumio KB.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.983,
+            "label": "98%",
+            "color": {
+                "opacity": 0.98,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Pocket TTS.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.839,
+            "label": "83%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Pocket TTS.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.872,
+            "label": "87%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Pocket TTS.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.806,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Pocket TTS.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.816,
+            "label": "81%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Pomelli Catalog.md",
+            "to": "AI/ProxyWhirl web scraping.md",
+            "weight": 0.957,
+            "label": "95%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Pomelli Catalog.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.86,
+            "label": "85%",
+            "color": {
+                "opacity": 0.86,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Pomelli Catalog.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.939,
+            "label": "93%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Pomelli Catalog.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.928,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Pomelli Catalog.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.963,
+            "label": "96%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/ProxyWhirl web scraping.md",
+            "to": "AI/Qwen-Lens-Studio.md",
+            "weight": 0.909,
+            "label": "90%",
+            "color": {
+                "opacity": 0.91,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/ProxyWhirl web scraping.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.963,
+            "label": "96%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/ProxyWhirl web scraping.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.93,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Qwen-Lens-Studio.md",
+            "to": "AI/Rapid-MLX.md",
+            "weight": 0.895,
+            "label": "89%",
+            "color": {
+                "opacity": 0.89,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Qwen-Lens-Studio.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.83,
+            "label": "82%",
+            "color": {
+                "opacity": 0.83,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Qwen-Lens-Studio.md",
+            "to": "AI/Scenema Audio Zero shot expressive voice cloning and speech generation.md",
+            "weight": 0.837,
+            "label": "83%",
+            "color": {
+                "opacity": 0.84,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Qwen-Lens-Studio.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.899,
+            "label": "89%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Rapid-MLX.md",
+            "to": "AI/Repository Understand-Anything.md",
+            "weight": 0.939,
+            "label": "93%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Rapid-MLX.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.98,
+            "label": "97%",
+            "color": {
+                "opacity": 0.98,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "AI/Repository Understand-Anything.md",
+            "to": "AI/SiYuan PKM.md",
+            "weight": 0.929,
+            "label": "92%",
+            "color": {
+                "opacity": 0.93,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Giao duc/Tu hoc.md",
+            "to": "Kinh te/Hieu ngheo thoat ngheo.md",
+            "weight": 0.803,
+            "label": "80%",
+            "color": {
+                "opacity": 0.8,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Giao duc/Tu hoc.md",
+            "to": "Sinh hoc/Ban Mai Tre.md",
+            "weight": 0.806,
+            "label": "80%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Giao duc/Tu hoc.md",
+            "to": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
+            "weight": 0.814,
+            "label": "81%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Giao duc/Tu hoc.md",
             "to": "Triet ly song/Bai giang cuoi cung.md",
+            "weight": 0.802,
+            "label": "80%",
+            "color": {
+                "opacity": 0.8,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Giao duc/Tu hoc.md",
+            "to": "Triet ly song/Tu hoc – Mot nhu cau thoi dai.md",
+            "weight": 0.936,
+            "label": "93%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Kinh te/Chien luoc dai duong xanh.md",
+            "to": "Kinh te/Linh hon quang cao.md",
+            "weight": 0.964,
+            "label": "96%",
+            "color": {
+                "opacity": 0.96,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Kinh te/Hieu ngheo thoat ngheo.md",
+            "to": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
             "weight": 0.815,
+            "label": "81%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Kinh te/Hieu ngheo thoat ngheo.md",
+            "to": "Tam ly/Cú hích Nudge.md",
+            "weight": 0.83,
+            "label": "82%",
+            "color": {
+                "opacity": 0.83,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Quan tri/Siêu đội ngũ.md",
+            "to": "Quan tri/Tu tot den vi dai.md",
+            "weight": 0.98,
+            "label": "98%",
+            "color": {
+                "opacity": 0.98,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Quan tri/Tu tot den vi dai.md",
+            "to": "Tam ly/Cú hích Nudge.md",
+            "weight": 0.821,
+            "label": "82%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Sinh hoc/An gi cho bo nao.md",
+            "to": "Sinh hoc/Ban Mai Tre.md",
+            "weight": 0.848,
+            "label": "84%",
+            "color": {
+                "opacity": 0.85,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Sinh hoc/An gi cho bo nao.md",
+            "to": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
+            "weight": 0.9,
+            "label": "89%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Sinh hoc/Ban Mai Tre.md",
+            "to": "Triet ly song/Bai giang cuoi cung.md",
+            "weight": 0.822,
+            "label": "82%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Sinh hoc/Ban Mai Tre.md",
+            "to": "Triet ly song/Tu hoc – Mot nhu cau thoi dai.md",
+            "weight": 0.814,
             "label": "81%",
             "color": {
                 "opacity": 0.81,
@@ -989,11 +4344,123 @@
         },
         {
             "from": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
+            "to": "Tam ly/Cú hích Nudge.md",
+            "weight": 0.811,
+            "label": "81%",
+            "color": {
+                "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
+            "to": "Triet ly song/Bai giang cuoi cung.md",
+            "weight": 0.83,
+            "label": "83%",
+            "color": {
+                "opacity": 0.83,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Sinh hoc/Co the nguoi Chuyen du hanh den moi bo phan cua chung ta.md",
             "to": "Triet ly song/Tu hoc – Mot nhu cau thoi dai.md",
-            "weight": 0.809,
+            "weight": 0.829,
+            "label": "82%",
+            "color": {
+                "opacity": 0.83,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Tam ly/Cú hích Nudge.md",
+            "to": "Triet ly song/Tu hoc – Mot nhu cau thoi dai.md",
+            "weight": 0.807,
             "label": "80%",
             "color": {
                 "opacity": 0.81,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Triet ly song/Bai giang cuoi cung.md",
+            "to": "Triet ly song/Tu hoc – Mot nhu cau thoi dai.md",
+            "weight": 0.936,
+            "label": "93%",
+            "color": {
+                "opacity": 0.94,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Triet ly song/Be Useful Seven Tools for Life.md",
+            "to": "Triet ly song/Tu hoc – Mot nhu cau thoi dai.md",
+            "weight": 0.901,
+            "label": "90%",
+            "color": {
+                "opacity": 0.9,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Van hoc/Chiec thia bac.md",
+            "to": "Van hoc/Huyen thoai mua thu.md",
+            "weight": 0.868,
+            "label": "86%",
+            "color": {
+                "opacity": 0.87,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Van hoc/Hieu sach cuoi cung o London.md",
+            "to": "Van hoc/Huyen thoai mua thu.md",
+            "weight": 0.825,
+            "label": "82%",
+            "color": {
+                "opacity": 0.82,
+                "color": "#848484"
+            },
+            "font": {
+                "size": 10,
+                "align": "middle"
+            }
+        },
+        {
+            "from": "Van hoc/Huyen thoai mua thu.md",
+            "to": "Van hoc/Tinh yeu xanh tham.md",
+            "weight": 0.866,
+            "label": "86%",
+            "color": {
+                "opacity": 0.87,
                 "color": "#848484"
             },
             "font": {
